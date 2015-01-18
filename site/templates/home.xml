@@ -30,18 +30,22 @@
 					<div class="slide"></div>
 					<div class="slide"></div>
 					<div class="inner_wrap">
-						<div class="form_container">
-							<cms:module
-								name:"contact_form"
-								action="show"
-								text_id="contact_one"
-							/>
-							<cms:module
-								name:"contact_form"
-								action="show"
-								text_id="contact_two"
-							/>
-						</div>
+							<div class="menu">
+
+							</div>
+								<div class="form_container">
+									<cms:module
+										name:"contact_form"
+										action="show"
+										text_id="contact_one"
+									/>
+									<cms:module
+										name:"contact_form"
+										action="show"
+										text_id="contact_two"
+									/>
+								</div>
+
 					</div>
 				</div>
 		</body>

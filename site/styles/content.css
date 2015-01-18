@@ -100,4 +100,17 @@ div#slides div.inner_wrap {
 	position: relative;
 }
 
+/*FORM SECTION*/
+
+div#slides div.inner_wrap {
+	position: absolute;
+	top:50%;
+	margin-top: -250px;
+	left: 50%;
+	margin-left: -500px;
+	height: 500px;
+	width: 1000px;
+	background-color: white;
+}
+
 
