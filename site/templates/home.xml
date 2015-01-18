@@ -5,16 +5,45 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
-			<cms:module
-				name="contact_form"
-				action="show"
-				text_id="test"
-			/>
+				<header>
+					<div class="inner_wrap">
+						<div class="logo"></div>
+						<nav>
+							<a href="#"><cms:text constant="home"/></a>
+							<a href="#"><cms:text constant="about"/></a>
+							<a href="#"><cms:text constant="moving"/></a>
+							<a href="#"><cms:text constant="international"/></a>
+							<a href="#"><cms:text constant="estimate"/></a>
+							<a href="#"><cms:text constant="reviews"/></a>
+							<a href="#"><cms:text constant="contact"/></a>
+						</nav>
+					</div>
+				</header>
+				<!-- Top Section image slides -->
+				<div id="slides">
+					<div class="slide"></div>
+					<div class="slide"></div>
+					<div class="slide"></div>
+					<div class="inner_wrap">
+						<div class="form_container">
+							<cms:module
+								name:"contact_form"
+								action="show"
+								text_id="contact_one"
+							/>
+							<cms:module
+								name:"contact_form"
+								action="show"
+								text_id="contact_two"
+							/>
+						</div>
+					</div>
+				</div>
 		</body>
 	</html>
 </document>

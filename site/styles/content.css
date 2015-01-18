@@ -1,0 +1,103 @@
+/**
+ *  Style Sheet
+ *  Nobelvanlines-lp
+ *
+ * Copyright (c) 2014. by Way2CU, http://way2cu.com
+ * Author: Tal Reznics
+ */
+
+ div.inner_wrap {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 1200px;
+ 	position: relative;
+ }
+
+ header {
+ 	display: block;
+ 	background-color: white;
+ }
+
+ header div.inner_wrap {
+ 	padding-top: 40px;
+ 	padding-bottom: 40px;
+ 	text-align: right;
+ }
+
+ header div.inner_wrap div.logo {
+ 	display: block;
+ 	position: absolute;
+ 	top:5px;
+ 	left: 0px;
+ 	background-color: white;
+ 	background-image: url(../images/logo.svg);
+ 	background-repeat:no-repeat;
+ 	background-position: center center;
+ 	background-size:85%;
+	width: 300px;
+	height: 140px;
+ 	box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.7);
+ 	z-index: 1;
+ }
+
+ header div.inner_wrap nav {
+ 	display: inline-block;
+ 	vertical-align: top;
+
+ }
+
+ header div.inner_wrap nav a {
+	display: inline-block;
+  	vertical-align: top;
+  	padding-right: 25px;
+  	color: black;
+  	text-decoration: none;
+	font-weight: 600;
+
+ }
+
+ /*Top Section Image Slides*/
+div#slides {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 800px;
+}
+div#slides div.slide {
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 800px;
+	height: 800px;
+	width: 100%;
+	opacity: 1;
+	transition: opacity 3s;
+}
+
+div#slides div.slide.visible {
+	opacity: 1;
+}
+
+div#slides div.slide:nth-of-type(1) {
+
+	background-image: url(../images/header-background.jpg);
+}
+
+div#slides div.slide:nth-of-type(2) {
+
+}
+
+div#slides div.slide:nth-of-type(3) {
+
+}
+
+div#slides div.inner_wrap {
+	display: block;
+	position: relative;
+}
+
+

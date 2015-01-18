@@ -3,5 +3,12 @@
 <document>
 	<language name="English" short="en">
 		<constant name="site_title">Site title</constant>
+		<constant name="home">Home</constant>
+		<constant name="about">About Us</constant>
+		<constant name="moving">Moving Services</constant>
+		<constant name="international">International Moving</constant>
+		<constant name="estimate">Moving Estimate</constant>
+		<constant name="reviews">Reviews</constant>
+		<constant name="contact">Contact Us</constant>
 	</language>
 </document>

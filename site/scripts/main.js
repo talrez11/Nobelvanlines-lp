@@ -6,7 +6,17 @@
  * Authors:
  */
 
+var Caracal = Caracal || {};
+
 function on_site_load() {
+
+ 	Caracal.slides = new PageControl('div#slides', 'div.slide');
+
+	// configure page control for sliders
+	Caracal.slides
+				.setInterval(5000)
+				.setWrapAround(true);
+
 }
 
 $(on_site_load);
