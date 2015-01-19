@@ -10,5 +10,8 @@
 		<constant name="estimate">Moving Estimate</constant>
 		<constant name="reviews">Reviews</constant>
 		<constant name="contact">Contact Us</constant>
+		<constant name="form_title">REQUEST A QUOTE</constant>
+		<constant name="form_local">LOCAL & LONG DISTANCE</constant>
+		<constant name="form_inter">INTERNATIONAL</constant>
 	</language>
 </document>
