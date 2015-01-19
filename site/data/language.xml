@@ -11,7 +11,8 @@
 		<constant name="reviews">Reviews</constant>
 		<constant name="contact">Contact Us</constant>
 		<constant name="form_title">REQUEST A QUOTE</constant>
-		<constant name="form_local">LOCAL & LONG DISTANCE</constant>
+		<constant name="form_local">LOCAL AND LONG DISTANCE</constant>
 		<constant name="form_inter">INTERNATIONAL</constant>
+		<constant name="send">GO</constant>
 	</language>
 </document>
