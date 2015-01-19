@@ -30,26 +30,20 @@
 					<div class="slide"></div>
 					<div class="slide"></div>
 					<div class="inner_wrap">
-
 							<div class="inner_form">
 								<h2><cms:text constant="form_title"/></h2>
-								<div class="menu">
-
+								<div class="form_menu">
+									<a href="#"><cms:text constant="form_local"/></a>
+									<a href="#"><cms:text constant="form_inter"/></a>
 								</div>
 								<div class="form_container">
 									<cms:module
-										name:"contact_form"
+										name="contact_form"
 										action="show"
 										text_id="contact_one"
 									/>
-									<cms:module
-										name:"contact_form"
-										action="show"
-										text_id="contact_two"
-									/>
 								</div>
 							</div>
-
 					</div>
 				</div>
 		</body>
