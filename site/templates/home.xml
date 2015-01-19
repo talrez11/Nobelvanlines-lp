@@ -30,9 +30,12 @@
 					<div class="slide"></div>
 					<div class="slide"></div>
 					<div class="inner_wrap">
-							<div class="menu">
 
-							</div>
+							<div class="inner_form">
+								<h2><cms:text constant="form_title"/></h2>
+								<div class="menu">
+
+								</div>
 								<div class="form_container">
 									<cms:module
 										name:"contact_form"
@@ -45,6 +48,7 @@
 										text_id="contact_two"
 									/>
 								</div>
+							</div>
 
 					</div>
 				</div>
