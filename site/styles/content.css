@@ -103,22 +103,165 @@ div#slides div.inner_wrap {
 /*FORM SECTION*/
 
 div#slides div.inner_wrap {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 div#slides div.inner_wrap div.inner_form {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
 	width: 1000px;
 	height: 500px;
+	background-color: rgba(255,255,255,0.9);
 	border: 1px solid white;
 }
 
 div#slides div.inner_wrap div.inner_form h2 {
 	display: block;
+	text-align: left;
+	color: #2b3d4f;
+	font-size: 1.9em;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_menu {
+	display: inline-block;
+	vertical-align: top;
+	width: 370px;
 
 }
+
+div#slides div.inner_wrap div.inner_form div.form_menu a {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 80px;
+	text-align: left;
+	text-decoration: none;
+	color:white;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(1) {
+	background-color:#f5911d;
+	background-image: url(../images/icon-truck.svg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: auto 35px;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(2) {
+	margin-top: 25px;
+	background-color:#94a4a5;
+	background-image: url(../images/icon-airplane.svg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: auto 25px;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -25px;
+	padding-left: 50px;
+	width: 550px;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form {
+	display: block;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 25px;
+	margin-right: 10px;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 25px;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox input {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label input[type="checkbox"] {
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	width: 40px;
+}
+div#slides div.inner_wrap div.inner_form div.form_container form label select {
+      margin-bottom: 25px;
+	  font-size: 1.1em;
+	  width: 260px;
+	  height: 60px;
+	  border-radius: 5px;
+	  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label span {
+	display: block;
+	text-align: left;
+	padding-bottom: 5px;
+	font-size: 1.5em;
+}
+div#slides div.inner_wrap div.inner_form div.form_container form label input {
+	  display: block;
+	  margin-bottom: 25px;
+	  font-size: 1.5em;
+	  width: 260px;
+	  height: 60px;
+	  border-radius: 5px;
+	  border: 1px solid #7e8b8c;
+	  transition:all 0.3s;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label input[name="date"] {
+	font-size: 1.1em;
+}
+
+
+div#slides div.inner_wrap div.inner_form div.form_container form label input:focus {
+	border: 1px solid #f5911d;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form div.controls {
+	display: block;
+	padding-right: 15px;
+	text-align: right;
+
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form div.controls button {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color:#15a51d;
+	color:white;
+	font-size: 1.8em;
+	border: none;
+	cursor: pointer;
+	transition:all 0.3s;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form div.controls button:hover {
+	background-color:#75cb1d;
+}
+
+
 
 
