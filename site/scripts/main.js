@@ -52,8 +52,8 @@ function on_site_load() {
 			});
 		});
 
-		$(container2).prependTo('form');
-		$(container).prependTo('form');
+		container2.prependTo('form');
+		container.prependTo('form');
 
 		// $('form div.second').show();
 
