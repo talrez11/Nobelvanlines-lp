@@ -177,7 +177,17 @@ div#slides div.inner_wrap div.inner_form div.form_container {
 
 div#slides div.inner_wrap div.inner_form div.form_container form {
 	display: block;
+	position: relative;
+	/*position: absolute;
+	top:0px;
+	left: 40px;*/
 	overflow: hidden;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type {
+	position: absolute;
+	top:0px;
+	left: 0px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label {
