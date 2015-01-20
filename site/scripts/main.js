@@ -24,38 +24,38 @@ function on_site_load() {
 	var backBtn=$('<input type="button" value="BACK">');
 
 		for(var i=0;i<=5;i++)
-			$('form label').eq(0).detach().appendTo(container);
+			$('form:first() label').eq(0).detach().appendTo(container);
 
-		goBtn.addClass('btn').appendTo('div.controls');
+		goBtn.addClass('btn').appendTo('form:first() div.controls');
 
 		goBtn.click(function(event) {
-			$('form div.first').animate({left:'100%'},300);
-			$('form div.second').animate({left:'0%'},300,function(){
+			$('form:first() div.first').animate({left:'100%'},300);
+			$('form:first() div.second').animate({left:'0%'},300,function(){
 				backBtn.animate({opacity:'1'});
 				goBtn.animate({opacity:'0'});
-				$('form div.controls button').animate({opacity:'1'});
+				$('form:first() div.controls button').animate({opacity:'1'});
 			});
 
 
 		});
 
 		for(var i=0;i<=4;i++)
-			$('form label').eq(0).detach().appendTo(container2);
-		backBtn.addClass('backBtn').appendTo('div.controls');
+			$('form:first() label').eq(0).detach().appendTo(container2);
+		backBtn.addClass('backBtn').appendTo('form:first() div.controls');
 
 		backBtn.click(function(event) {
-			$('form div.second').animate({left:'100%'},300);
-			$('form div.first').animate({left:'0%'},300,function(){
+			$('form:first() div.second').animate({left:'100%'},300);
+			$('form:first() div.first').animate({left:'0%'},300,function(){
 			  backBtn.animate({opacity:'0'});
 			  goBtn.animate({opacity:'1'});
-			  $('form div.controls button').animate({opacity:'0'});
+			  $('form:first() div.controls button').animate({opacity:'0'});
 			});
 		});
 
-		container2.prependTo('form');
-		container.prependTo('form');
+		container2.prependTo('form:first()');
+		container.prependTo('form:first()');
 
-		// $('form div.second').show();
+
 
 
 }
