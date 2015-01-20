@@ -105,6 +105,7 @@ div#slides div.inner_wrap {
 div#slides div.inner_wrap {
 	padding-top: 150px;
 	padding-bottom: 150px;
+
 }
 
 div#slides div.inner_wrap div.inner_form {
@@ -116,6 +117,7 @@ div#slides div.inner_wrap div.inner_form {
 	height: 500px;
 	background-color: rgba(255,255,255,0.9);
 	border: 1px solid white;
+
 }
 
 div#slides div.inner_wrap div.inner_form h2 {
@@ -165,19 +167,23 @@ div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(2) {
 div#slides div.inner_wrap div.inner_form div.form_container {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: -25px;
+	margin-top: -5px;
 	padding-left: 50px;
 	width: 550px;
+	position: relative;
+
+
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form {
 	display: block;
+	overflow: hidden;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label {
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 25px;
+	padding-top: 5px;
 	margin-right: 10px;
 }
 
@@ -190,11 +196,12 @@ div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox 
 div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
+	padding-right: 20px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label.checkbox input {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label input[type="checkbox"] {
@@ -205,9 +212,9 @@ div#slides div.inner_wrap div.inner_form div.form_container form label input[typ
 }
 div#slides div.inner_wrap div.inner_form div.form_container form label select {
       margin-bottom: 25px;
-	  font-size: 1.1em;
+	  font-size: 0.9em;
 	  width: 260px;
-	  height: 60px;
+	  height: 40px;
 	  border-radius: 5px;
 	  border: 2px solid rgba(255, 255, 255, 0.9);
 }
@@ -216,21 +223,27 @@ div#slides div.inner_wrap div.inner_form div.form_container form label span {
 	display: block;
 	text-align: left;
 	padding-bottom: 5px;
-	font-size: 1.5em;
+	padding-top: 5px;
+	font-size: 1.1em;
 }
 div#slides div.inner_wrap div.inner_form div.form_container form label input {
 	  display: block;
-	  margin-bottom: 25px;
-	  font-size: 1.5em;
+	  margin-bottom: 20px;
+	  font-size: 1.1em;
 	  width: 260px;
-	  height: 60px;
+	  height: 40px;
 	  border-radius: 5px;
 	  border: 1px solid #7e8b8c;
 	  transition:all 0.3s;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label input[name="date"] {
-	font-size: 1.1em;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+div#slides div.inner_wrap div.inner_form div.form_container form label input[name="extra"] {
+	visibility: hidden;
 }
 
 
@@ -240,14 +253,15 @@ div#slides div.inner_wrap div.inner_form div.form_container form label input:foc
 
 div#slides div.inner_wrap div.inner_form div.form_container form div.controls {
 	display: block;
-	padding-right: 15px;
+	padding-top: 80px;
+	padding-right: 33px;
 	text-align: right;
 
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form div.controls button {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-right: 30px;
 	padding-left: 30px;
 	background-color:#15a51d;
@@ -262,6 +276,60 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 	background-color:#75cb1d;
 }
 
+/*class for jquery*/
+
+.btn {
+  display: block;
+  margin-left: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #15a51d;
+  color: white;
+  font-size: 1.8em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+	background-color:#75cb1d;
+}
+.backBtn {
+  position: absolute;
+  bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #7e8b8c;
+  color: white;
+  font-size: 1.8em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.backBtn:hover {
+  background-color:rgba(126, 139, 140, 0.7);
+}
+form div.first {
+	display: block;
+	position: relative;
+	transition:all 0.8s;
+
+}
+
+form div.second {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left:100%;
+	transition:all 0.8s;
+}
 
 
 
