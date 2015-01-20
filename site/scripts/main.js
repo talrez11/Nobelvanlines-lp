@@ -1,9 +1,9 @@
 /**
  * Main JavaScript
- * Site Name
+ * Nobelvanlins-lp
  *
  * Copyright (c) 2014. by Way2CU, http://way2cu.com
- * Authors:
+ * Authors:Tal Reznic
  */
 
 var Caracal = Caracal || {};
@@ -20,22 +20,39 @@ function on_site_load() {
 	//form configuration
 	var container=$('<div class="first">');
 	var container2=$('<div class="second">');
+	var goBtn=$('<input type="button" value="GO">');
+	var backBtn=$('<input type="button" value="BACK">');
 
-	$('form label').eq(0).detach().appendTo(container);
-	$('form label').eq(1).detach().appendTo(container);
-	$('form label').eq(2).detach().appendTo(container);
-	$('form label').eq(3).detach().appendTo(container);
-	$('form label').eq(4).detach().appendTo(container);
-	$('form label').eq(5).detach().appendTo(container);
+		for(var i=0;i<=5;i++) {
 
+			$('form label').eq(0).detach().appendTo(container);
+		}
 
-	$('form label').eq(6).detach().appendTo(container2);
-	$('form label').eq(7).detach().appendTo(container2);
-	$('form label').eq(8).detach().appendTo(container2);
-	$('form label').eq(9).detach().appendTo(container2);
+		$(goBtn).addClass('btn').appendTo(container);
 
-	$(container).appendTo('form');
-	$(container2).appendTo('form');
+		$(goBtn).click(function(event) {
+			$('form div.first').animate({left:'100%'},300);
+			$('form div.second').animate({left:'0%'},300);
+
+		});
+
+		for(var i=0;i<=4;i++) {
+
+			$('form label').eq(0).detach().appendTo(container2);
+		}
+
+		$('form div.controls').detach().appendTo(container2);
+		$(backBtn).addClass('backBtn').appendTo(container2);
+
+		$(backBtn).click(function(event) {
+			$('form div.second').animate({left:'100%'},300);
+			$('form div.first').animate({left:'0%'},300);
+		});
+
+		$(container2).prependTo('form');
+		$(container).prependTo('form');
+
+		// $('form div.second').show();
 
 
 }
