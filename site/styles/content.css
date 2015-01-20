@@ -269,7 +269,8 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 	font-size: 1.8em;
 	border: none;
 	cursor: pointer;
-	transition:all 0.3s;
+	opacity: 0;
+	transition:all 0.8s;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form div.controls button:hover {
@@ -279,18 +280,19 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 /*class for jquery*/
 
 .btn {
-  display: block;
-  margin-left: 75%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-  background-color: #15a51d;
-  color: white;
-  font-size: 1.8em;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
+	position: absolute;
+	bottom:0px;
+	right:30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color:#15a51d;
+	color:white;
+	font-size: 1.8em;
+	border: none;
+	cursor: pointer;
+	transition:all 0.3s;
 }
 
 .btn:hover {
@@ -298,7 +300,8 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 }
 .backBtn {
   position: absolute;
-  bottom: 3px;
+  bottom: 5px;
+  left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 30px;
@@ -308,6 +311,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
   font-size: 1.8em;
   border: none;
   cursor: pointer;
+  opacity: 0;
   transition: all 0.3s;
 }
 
