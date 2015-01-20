@@ -42,11 +42,11 @@
 										action="show"
 										text_id="contact_one"
 									/>
-									<cms:module
+								<!-- 	<cms:module
 										name="contact_form"
 										action="show"
 										text_id="contact_two"
-									/>
+									/> -->
 								</div>
 							</div>
 					</div>
