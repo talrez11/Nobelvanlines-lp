@@ -47,9 +47,8 @@ function on_site_load() {
 			$('form div.second').animate({left:'100%'},300);
 			$('form div.first').animate({left:'0%'},300,function(){
 			  backBtn.animate({opacity:'0'});
-			  goBtn.animate({opacity:'0'});
-
-
+			  goBtn.animate({opacity:'1'});
+			  $('form div.controls button').animate({opacity:'0'});
 			});
 		});
 
