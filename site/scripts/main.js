@@ -66,14 +66,14 @@ $(on_site_load);
 
 function Form(container) {
 
-	var self = this;
+		var self = this;
 
-	self.container = container;
-	self.fields = null;
-	self.first_section = $('<div class="first">');
-	self.second_section = $('<div class="second">');
-	self.goBtn = $('<input type="button" value="GO">');
-	self.backBtn = $('<input type="button" value="BACK">');
+		self.container = container;
+		self.fields = null;
+		self.first_section = $('<div class="first">');
+		self.second_section = $('<div class="second">');
+		self.goBtn = $('<input type="button" value="GO">');
+		self.backBtn = $('<input type="button" value="BACK">');
 
 	//Complete object initialization.
 
@@ -102,7 +102,7 @@ function Form(container) {
 		self.first_section.animate({left:'100%'},300);
 		self.second_section.animate({left:'0%'},300,function(){
 
-			self.backBtn.animate({opacity:'1'});
+		self.backBtn.animate({opacity:'1'});
 		self.goBtn.animate({opacity:'0'});
 		self.container.find('div.controls button').animate({opacity:'1'});
 
