@@ -178,7 +178,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form{
 	position: absolute;
 	top:0px;
 	left: 50px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 
