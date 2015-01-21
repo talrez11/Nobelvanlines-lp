@@ -82,13 +82,13 @@ function Form(container) {
 		self.fields = self.container.find('label');
 
 		for(var i=0; i<=5; i++)
-			self.fields.eq(0).detach().appendTo(self.first_section);
+			self.fields.eq(i).detach().appendTo(self.first_section);
 
 		self.goBtn.addClass('btn').appendTo(self.container);
 		self.goBtn.click(self._handle_next);
 
 		for(var i=0; i<=4; i++)
-			self.fields.eq(0).detach().appendTo(self.second_section);
+			self.fields.eq(i).detach().appendTo(self.second_section);
 
 		self.backBtn.addClass('backBtn').appendTo(self.container);
 		self.backBtn.click(self._handle_back);
