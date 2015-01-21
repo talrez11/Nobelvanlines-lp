@@ -16,7 +16,7 @@ function on_site_load() {
 	Caracal.slides
 				.setInterval(5000)
 				.setWrapAround(true);
-	var one = new Form('div.form_container form');
+	// var one = new Form('div.form_container form');
 
 
 	//form configuration
@@ -56,25 +56,32 @@ function on_site_load() {
 
 	// 	container2.prependTo('form');
 	// 	container.prependTo('form');
+
+
+
+
+}
+
+$(on_site_load);
+
 	function Form(container) {
 
-		var self=this;
+		var self = this;
 
-		self.container=container;
-		self.fields=null;
-		self.first_section=$('<div class="first">');
-		self.second_section=$('<div class="second">');
-		self.goBtn=$('<input type="button" value="GO">');
-		self.backBtn=$('<input type="button" value="BACK">');
+		self.container = container;
+		self.fields = null;
+		self.first_section = $('<div class="first">');
+		self.second_section = $('<div class="second">');
+		self.goBtn = $('<input type="button" value="GO">');
+		self.backBtn = $('<input type="button" value="BACK">');
 
 
 		//Complete object initialization.
 
 		self._init=function() {
 
-			self.container.prepend('self.second_section');
-			self.container.prepend('self.first_section');
-
+			self.container.prepend(self.second_section);
+			self.container.prepend(self.first_section);
 			self.fields=self.container.find('label');
 
 			for(var i=0; i<=5 ; i++)
@@ -84,17 +91,17 @@ function on_site_load() {
 
 			self.goBtn.click(self._handle_next);
 
-		self._handle_next=function(){
+			self._handle_next=function(){
 
-			 self.first_section.animate({left:'100%'},300);
-			 self.second_section.animate({left:'0%'},300,function(){
+				 self.first_section.animate({left:'100%'},300);
+				 self.second_section.animate({left:'0%'},300,function(){
 
-		 		 self.backBtn.animate({opacity:'1'});
-				 self.goBtn.animate({opacity:'0'});
-				 self.container.find('div.controls button').animate({opacity:'1'});
+			 		 self.backBtn.animate({opacity:'1'});
+					 self.goBtn.animate({opacity:'0'});
+					 self.container.find('div.controls button').animate({opacity:'1'});
 
-			});
-		}
+				});
+			}
 
 			for(var i=0;i<=4;i++)
 			   self.fields[i].detach().appendTo(self.second_section);
@@ -102,16 +109,16 @@ function on_site_load() {
 
 	 		self.backBtn.click(self._handle_back);
 
-	 	self._handle_back=function(){
-	 		self.second_section.animate({left:'100%'},300);
-	 		self.first_section.animate({left:'0%'},300,function(){
+		 	self._handle_back=function(){
+		 		self.second_section.animate({left:'100%'},300);
+		 		self.first_section.animate({left:'0%'},300,function(){
 
-	 			self.backBtn.animate({opacity:'0'});
-	 			self.goBtn.animate({opacity:'1'});
-	 			self.container.find('div.controls button').animate({opacity:'0'});
+		 			self.backBtn.animate({opacity:'0'});
+		 			self.goBtn.animate({opacity:'1'});
+		 			self.container.find('div.controls button').animate({opacity:'0'});
 
-	 		});
-	 	};
+		 		});
+		 	};
 
 	}
 
@@ -120,11 +127,3 @@ function on_site_load() {
 		self._init();
 
 }
-
-
-
-
-}
-
-$(on_site_load);
-
