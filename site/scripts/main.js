@@ -16,44 +16,110 @@ function on_site_load() {
 	Caracal.slides
 				.setInterval(5000)
 				.setWrapAround(true);
+	var one = new Form('div.form_container form');
+
 
 	//form configuration
-	var container=$('<div class="first">');
-	var container2=$('<div class="second">');
-	var goBtn=$('<input type="button" value="GO">');
-	var backBtn=$('<input type="button" value="BACK">');
+	// var container=$('<div class="first">');
+	// var container2=$('<div class="second">');
+	// var goBtn=$('<input type="button" value="GO">');
+	// var backBtn=$('<input type="button" value="BACK">');
 
-		for(var i=0;i<=5;i++)
-			$('form:first() label').eq(0).detach().appendTo(container);
+	// 	for(var i=0;i<=5;i++)
+	// 		$('form label').eq(0).detach().appendTo(container);
 
-		goBtn.addClass('btn').appendTo('form:first() div.controls');
+	// 	goBtn.addClass('btn').appendTo('form div.controls');
 
-		goBtn.click(function(event) {
-			$('form:first() div.first').animate({left:'100%'},300);
-			$('form:first() div.second').animate({left:'0%'},300,function(){
-				backBtn.animate({opacity:'1'});
-				goBtn.animate({opacity:'0'});
-				$('form:first() div.controls button').animate({opacity:'1'});
+	// 	goBtn.click(function(event) {
+	// 		$('form div.first').animate({left:'100%'},300);
+	// 		$('form div.second').animate({left:'0%'},300,function(){
+	// 			backBtn.animate({opacity:'1'});
+	// 			goBtn.animate({opacity:'0'});
+	// 			$('form div.controls button').animate({opacity:'1'});
+	// 		});
+
+
+	// 	});
+
+	// 	for(var i=0;i<=4;i++)
+	// 		$('form label').eq(0).detach().appendTo(container2);
+	// 	backBtn.addClass('backBtn').appendTo('form div.controls');
+
+	// 	backBtn.click(function(event) {
+	// 		$('form div.second').animate({left:'100%'},300);
+	// 		$('form div.first').animate({left:'0%'},300,function(){
+	// 		  backBtn.animate({opacity:'0'});
+	// 		  goBtn.animate({opacity:'1'});
+	// 		  $('form div.controls button').animate({opacity:'0'});
+	// 		});
+	// 	});
+
+	// 	container2.prependTo('form');
+	// 	container.prependTo('form');
+	function Form(container) {
+
+		var self=this;
+
+		self.container=container;
+		self.fields=null;
+		self.first_section=$('<div class="first">');
+		self.second_section=$('<div class="second">');
+		self.goBtn=$('<input type="button" value="GO">');
+		self.backBtn=$('<input type="button" value="BACK">');
+
+
+		//Complete object initialization.
+
+		self._init=function() {
+
+			self.container.prepend('self.second_section');
+			self.container.prepend('self.first_section');
+
+			self.fields=self.container.find('label');
+
+			for(var i=0; i<=5 ; i++)
+				self.fields[i].detach().appendTo(self.first_section);
+
+			self.goBtn.addClass('btn').appendTo('self.container div.controls');
+
+			self.goBtn.click(self._handle_next);
+
+		self._handle_next=function(){
+
+			 self.first_section.animate({left:'100%'},300);
+			 self.second_section.animate({left:'0%'},300,function(){
+
+		 		 self.backBtn.animate({opacity:'1'});
+				 self.goBtn.animate({opacity:'0'});
+				 self.container.find('div.controls button').animate({opacity:'1'});
+
 			});
+		}
 
+			for(var i=0;i<=4;i++)
+			   self.fields[i].detach().appendTo(self.second_section);
+	 		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
 
-		});
+	 		self.backBtn.click(self._handle_back);
 
-		for(var i=0;i<=4;i++)
-			$('form:first() label').eq(0).detach().appendTo(container2);
-		backBtn.addClass('backBtn').appendTo('form:first() div.controls');
+	 	self._handle_back=function(){
+	 		self.second_section.animate({left:'100%'},300);
+	 		self.first_section.animate({left:'0%'},300,function(){
 
-		backBtn.click(function(event) {
-			$('form:first() div.second').animate({left:'100%'},300);
-			$('form:first() div.first').animate({left:'0%'},300,function(){
-			  backBtn.animate({opacity:'0'});
-			  goBtn.animate({opacity:'1'});
-			  $('form:first() div.controls button').animate({opacity:'0'});
-			});
-		});
+	 			self.backBtn.animate({opacity:'0'});
+	 			self.goBtn.animate({opacity:'1'});
+	 			self.container.find('div.controls button').animate({opacity:'0'});
 
-		container2.prependTo('form:first()');
-		container.prependTo('form:first()');
+	 		});
+	 	};
+
+	}
+
+	// finalize object
+
+		self._init();
+
+}
 
 
 
@@ -61,3 +127,4 @@ function on_site_load() {
 }
 
 $(on_site_load);
+
