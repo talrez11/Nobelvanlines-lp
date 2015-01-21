@@ -16,7 +16,8 @@ function on_site_load() {
 	Caracal.slides
 				.setInterval(5000)
 				.setWrapAround(true);
-	// var one = new Form('form');
+	var element=$('form');
+	var one = new Form(element);
 
 
 	//form configuration
@@ -65,63 +66,63 @@ function on_site_load() {
 $(on_site_load);
 
 function Form(container) {
+	var self = this;
 
-		var self = this;
-
-		self.container = container;
-		self.fields = null;
-		self.first_section = $('<div class="first">');
-		self.second_section = $('<div class="second">');
-		self.goBtn = $('<input type="button" value="GO">');
-		self.backBtn = $('<input type="button" value="BACK">');
+	self.container = container;
+	self.fields = null;
+	self.first_section = $('<div class="first">');
+	self.second_section = $('<div class="second">');
+	self.goBtn = $('<input type="button" value="GO">');
+	self.backBtn = $('<input type="button" value="BACK">');
 
 	//Complete object initialization.
 
-	self._init=function() {
-
+	self._init = function() {
 		self.container.prepend(self.second_section);
 		self.container.prepend(self.first_section);
-		self.fields=self.container.find('label');
+		self.fields = self.container.find('label');
 
-		for(var i=0; i<=5 ; i++)
-		    self.fields[i].detach().appendTo(self.first_section);
+		for(var i=0; i<=5; i++)
+			self.fields[i].detach().appendTo(self.first_section);
 
 		self.goBtn.addClass('btn').appendTo('self.container div.controls');
 		self.goBtn.click(self._handle_next);
 
-		for(var i=0;i<=4;i++)
-	    	self.fields[i].detach().appendTo(self.second_section);
+		for(var i=0; i<=4; i++)
+			self.fields[i].detach().appendTo(self.second_section);
 
 		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
 		self.backBtn.click(self._handle_back);
+	};
 
-	}
-
-	self._handle_next=function(){
-
-		self.first_section.animate({left:'100%'},300);
-		self.second_section.animate({left:'0%'},300,function(){
-
-		self.backBtn.animate({opacity:'1'});
-		self.goBtn.animate({opacity:'0'});
-		self.container.find('div.controls button').animate({opacity:'1'});
-
+	/**
+	 * Handle clicking on next button.
+	 *
+	 * @param object event
+	 */
+	self._handle_next = function(event){
+		self.first_section.animate({left: '100%'}, 300);
+		self.second_section.animate({left: '0%'}, 300, function() {
+			self.backBtn.animate({opacity: '1'});
+			self.goBtn.animate({opacity: '0'});
+			self.container.find('div.controls button').animate({opacity: '1'});
 		});
-	}
+	};
 
-	self._handle_back=function(){
- 		self.second_section.animate({left:'100%'},300);
- 		self.first_section.animate({left:'0%'},300,function(){
+	/**
+	 * Handle clicking on previous button.
+	 *
+	 * @param object event
+	 */
+	self._handle_back = function(event) {
+		self.second_section.animate({left: '100%'}, 300);
+		self.first_section.animate({left: '0%'}, 300, function() {
+			self.backBtn.animate({opacity: '0'});
+			self.goBtn.animate({opacity: '1'});
+			self.container.find('div.controls button').animate({opacity: '0'});
+		});
+	};
 
-		self.backBtn.animate({opacity:'0'});
-		self.goBtn.animate({opacity:'1'});
-		self.container.find('div.controls button').animate({opacity:'0'});
-
- 		});
- 	};
-
-// finalize object
-
+	// finalize object
 	self._init();
-
 }
