@@ -78,21 +78,23 @@ function Form(container) {
 	//Complete object initialization.
 
 	self._init = function() {
-		self.container.prepend(self.second_section);
-		self.container.prepend(self.first_section);
+
 		self.fields = self.container.find('label');
 
 		for(var i=0; i<=5; i++)
-			self.fields[i].detach().appendTo(self.first_section);
+			self.fields.eq(0).detach().appendTo(self.first_section);
 
-		self.goBtn.addClass('btn').appendTo('self.container div.controls');
+		self.goBtn.addClass('btn').appendTo(self.container);
 		self.goBtn.click(self._handle_next);
 
 		for(var i=0; i<=4; i++)
-			self.fields[i].detach().appendTo(self.second_section);
+			self.fields.eq(0).detach().appendTo(self.second_section);
 
-		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
+		self.backBtn.addClass('backBtn').appendTo(self.container);
 		self.backBtn.click(self._handle_back);
+
+		self.container.prepend(self.second_section);
+		self.container.prepend(self.first_section);
 	};
 
 	/**
