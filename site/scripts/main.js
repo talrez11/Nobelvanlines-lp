@@ -16,7 +16,7 @@ function on_site_load() {
 	Caracal.slides
 				.setInterval(5000)
 				.setWrapAround(true);
-	// var one = new Form('div.form_container form');
+	// var one = new Form('form');
 
 
 	//form configuration
@@ -84,39 +84,41 @@ function Form(container) {
 		self.fields=self.container.find('label');
 
 		for(var i=0; i<=5 ; i++)
-			self.fields[i].detach().appendTo(self.first_section);
+		    self.fields[i].detach().appendTo(self.first_section);
 
 		self.goBtn.addClass('btn').appendTo('self.container div.controls');
 		self.goBtn.click(self._handle_next);
 
 		for(var i=0;i<=4;i++)
-		   self.fields[i].detach().appendTo(self.second_section);
- 		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
- 		self.backBtn.click(self._handle_back);
+	    	self.fields[i].detach().appendTo(self.second_section);
+
+		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
+		self.backBtn.click(self._handle_back);
+
 	}
 
 	self._handle_next=function(){
 
-			 self.first_section.animate({left:'100%'},300);
-			 self.second_section.animate({left:'0%'},300,function(){
+		self.first_section.animate({left:'100%'},300);
+		self.second_section.animate({left:'0%'},300,function(){
 
-		 		 self.backBtn.animate({opacity:'1'});
-				 self.goBtn.animate({opacity:'0'});
-				 self.container.find('div.controls button').animate({opacity:'1'});
+			self.backBtn.animate({opacity:'1'});
+		self.goBtn.animate({opacity:'0'});
+		self.container.find('div.controls button').animate({opacity:'1'});
 
-			});
-		}
+		});
+	}
 
 	self._handle_back=function(){
-	 		self.second_section.animate({left:'100%'},300);
-	 		self.first_section.animate({left:'0%'},300,function(){
+ 		self.second_section.animate({left:'100%'},300);
+ 		self.first_section.animate({left:'0%'},300,function(){
 
-	 			self.backBtn.animate({opacity:'0'});
-	 			self.goBtn.animate({opacity:'1'});
-	 			self.container.find('div.controls button').animate({opacity:'0'});
+		self.backBtn.animate({opacity:'0'});
+		self.goBtn.animate({opacity:'1'});
+		self.container.find('div.controls button').animate({opacity:'0'});
 
-	 		});
-	 	};
+ 		});
+ 	};
 
 // finalize object
 
