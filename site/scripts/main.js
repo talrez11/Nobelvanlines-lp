@@ -91,7 +91,18 @@ $(on_site_load);
 
 			self.goBtn.click(self._handle_next);
 
-			self._handle_next=function(){
+
+
+			for(var i=0;i<=4;i++)
+			   self.fields[i].detach().appendTo(self.second_section);
+	 		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
+
+	 		self.backBtn.click(self._handle_back);
+
+
+
+	}
+		self._handle_next=function(){
 
 				 self.first_section.animate({left:'100%'},300);
 				 self.second_section.animate({left:'0%'},300,function(){
@@ -103,13 +114,7 @@ $(on_site_load);
 				});
 			}
 
-			for(var i=0;i<=4;i++)
-			   self.fields[i].detach().appendTo(self.second_section);
-	 		self.backBtn.addClass('backBtn').appendTo('self.container div.controls');
-
-	 		self.backBtn.click(self._handle_back);
-
-		 	self._handle_back=function(){
+		self._handle_back=function(){
 		 		self.second_section.animate({left:'100%'},300);
 		 		self.first_section.animate({left:'0%'},300,function(){
 
@@ -119,8 +124,6 @@ $(on_site_load);
 
 		 		});
 		 	};
-
-	}
 
 	// finalize object
 
