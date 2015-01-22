@@ -178,8 +178,10 @@ div#slides div.inner_wrap div.inner_form div.form_container form{
 	position: absolute;
 	top:0px;
 	left: 50px;
-	/*overflow: hidden;*/
+	overflow: hidden;
+
 }
+
 
 
 div#slides div.inner_wrap div.inner_form div.form_container form label {
@@ -245,7 +247,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form label input[nam
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form label input[name="extra"] {
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 
@@ -254,14 +256,13 @@ div#slides div.inner_wrap div.inner_form div.form_container form label input:foc
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form div.controls {
-	display: block;
-	padding-top: 80px;
-	padding-right: 33px;
+	display:block;
 	text-align: right;
-
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form div.controls button {
+	display: block;
+	margin-left: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 30px;
@@ -271,7 +272,8 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 	font-size: 1.8em;
 	border: none;
 	cursor: pointer;
-	opacity:0;
+	opacity:1;
+	position: relative;
 	transition:all 0.8s;
 }
 
@@ -284,7 +286,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 .btn {
 	position: absolute;
 	bottom:0px;
-	right:30px;
+	right:0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 30px;
@@ -294,6 +296,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 	font-size: 1.8em;
 	border: none;
 	cursor: pointer;
+	opacity: 1;
 	transition:all 0.3s;
 }
 
@@ -302,7 +305,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 }
 .backBtn {
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -323,6 +326,8 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 form div.first {
 	display: block;
 	position: relative;
+	width: 100%;
+	height: 100%;
 	transition:all 0.8s;
 
 }
