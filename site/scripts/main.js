@@ -85,8 +85,8 @@ function Form(container) {
 		self.first_section.animate({left: '100%'}, 300);
 		self.second_section.animate({left: '0%'}, 300, function() {
 			self.backBtn.animate({opacity: '1'});
-			self.goBtn.animate({display: 'none'});
-			self.container.find('div.controls button').css('opacity','1');
+			self.goBtn.animate({display: 'none',});
+			self.container.find('div.controls button').css('z-index','1');
 		});
 	};
 
@@ -100,7 +100,7 @@ function Form(container) {
 		self.first_section.animate({left: '0%'}, 300, function() {
 			self.backBtn.animate({opacity: '0'});
 			self.goBtn.animate({opacity: '1'});
-			self.container.find('div.controls button').css('opacity','0');
+			self.container.find('div.controls button').css('z-index','0');
 		});
 	};
 
