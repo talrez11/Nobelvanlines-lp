@@ -26,20 +26,31 @@
  	text-align: right;
  }
 
- header div.inner_wrap div.logo {
- 	display: block;
- 	position: absolute;
- 	top:5px;
- 	left: 0px;
+  header div.inner_wrap div.logo {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	background-image: url(../images/Untitled-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 102%;
+	width: 312px;
+	height: 210px;
+	z-index: 1;
+
+  }
+
+ header div.inner_wrap div.logo span {
+	display: block;
  	background-color: white;
  	background-image: url(../images/logo.svg);
  	background-repeat:no-repeat;
  	background-position: center center;
  	background-size:85%;
-	width: 300px;
+ 	width: 300px;
 	height: 140px;
- 	box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.7);
- 	z-index: 1;
+
  }
 
  header div.inner_wrap nav {
@@ -149,7 +160,7 @@ div#slides div.inner_wrap div.inner_form div.form_menu a {
 }
 
 div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(1) {
-	background-color:#f5911d;
+	background-color:rgb(245, 145, 29);
 	background-image: url(../images/icon-truck.svg);
 	background-repeat: no-repeat;
 	background-position: 10px center;
