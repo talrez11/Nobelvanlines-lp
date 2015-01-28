@@ -6,6 +6,7 @@
  * Author: Tal Reznics
  */
 
+
  div.inner_wrap {
  	display: block;
  	margin-left: auto;
@@ -170,18 +171,21 @@ div#slides div.inner_wrap div.inner_form div.form_container {
 	margin-top: -5px;
 	padding-left: 50px;
 	width: 550px;
+	height:420px;
 	position: relative;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form{
+div#slides div.inner_wrap div.inner_form div.form_container form {
 	display: block;
 	position: absolute;
 	top:0px;
 	left: 50px;
 	overflow: hidden;
-
 }
 
+div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type {
+	display: none;
+}
 
 
 div#slides div.inner_wrap div.inner_form div.form_container form label {
