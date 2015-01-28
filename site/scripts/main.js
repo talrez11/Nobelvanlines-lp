@@ -19,10 +19,22 @@ function on_site_load() {
 
 
 
+
+
 	var element=$('form:first()');
 	var element2=$('form:last()');
 	var first_form = new Form(element);
 	var second_form = new Form(element2);
+
+	$('a.arrow.next').click(function(event) {
+		$('div.form_container form:first()').css('display','block');
+		$('div.form_container form:last()').css('display','none');
+	});
+
+	$('a.arrow.previous').click(function(event) {
+		$('div.form_container form:first()').css('display','none');
+		$('div.form_container form:last()').css('display','block');
+	});
 
 }
 
