@@ -63,9 +63,9 @@ function Form(container) {
 				field.appendTo(self.second_section);
 		}
 
-		self.goBtn.addClass('btn').appendTo('div.controls');
+		self.goBtn.addClass('btn').appendTo(self.container.find('div.controls'));
 		self.goBtn.click(self._handle_next);
-		self.backBtn.addClass('backBtn').appendTo('div.controls');
+		self.backBtn.addClass('backBtn').appendTo(self.container.find('div.controls'));
 		self.backBtn.click(self._handle_back);
 
 		self.container.prepend(self.second_section);
