@@ -33,11 +33,20 @@
 							<div class="inner_form">
 								<h2><cms:text constant="form_title"/></h2>
 								<div class="form_menu">
-									<a href="#" class="local"><cms:text constant="form_local"/></a>
-									<a href="#" class="inter"><cms:text constant="form_inter"/></a>
+									<a
+									 href="javascript:void(0);"
+									 class="arrow next"
+									 >
+									 <cms:text constant="form_local"/>
+									</a>
+									<a
+									 href="javascript:void(0);"
+									 class="arrow previous"
+									 >
+									 <cms:text constant="form_inter"/>
+									</a>
 								</div>
 								<div class="form_container">
-
 									<cms:module
 										name="contact_form"
 										action="show"
