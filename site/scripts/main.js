@@ -27,11 +27,15 @@ function on_site_load() {
 	var second_form = new Form(element2);
 
 	$('a.arrow.next').click(function(event) {
+		$(this).css('backgroundColor','#f5911d');
+		$('a.arrow.previous').css('backgroundColor','#94a4a5');
 		$('div.form_container form:first()').css('display','block');
 		$('div.form_container form:last()').css('display','none');
 	});
 
 	$('a.arrow.previous').click(function(event) {
+		$(this).css('backgroundColor','#f5911d');
+		$('a.arrow.next').css('backgroundColor','#94a4a5');
 		$('div.form_container form:first()').css('display','none');
 		$('div.form_container form:last()').css('display','block');
 	});
