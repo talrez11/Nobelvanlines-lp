@@ -288,7 +288,6 @@ div#slides div.inner_wrap div.inner_form div.form_container form div.controls bu
 	font-size: 1.8em;
 	border: none;
 	cursor: pointer;
-	opacity:1;
 	position: relative;
 	transition:all 0.8s;
 }
