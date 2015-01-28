@@ -12,7 +12,9 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 				<header>
 					<div class="inner_wrap">
-						<div class="logo"></div>
+						<div class="logo">
+							<span></span>
+						</div>
 						<nav>
 							<a href="#"><cms:text constant="home"/></a>
 							<a href="#"><cms:text constant="about"/></a>
