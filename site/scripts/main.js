@@ -20,6 +20,10 @@ function on_site_load() {
 				.setInterval(5000)
 				.setWrapAround(true);
 
+	// Google Autocomplete
+
+
+
 
 	$('a.arrow.next').click(function(event) {
 		$(this).css('backgroundColor','#f5911d');
@@ -70,6 +74,8 @@ function on_site_load() {
 		}
 
 		Caracal.Form1.nextPage();
+		$('form:first() button[name="btn"]').css('opacity','0');
+		$('form:first() button[name="btnBack"]').css('opacity','1');
 
 	}
 
@@ -103,6 +109,8 @@ function on_site_load() {
 		}
 
 		Caracal.Form2.nextPage();
+		$('form:last() button[name="btn1"]').css('opacity','0');
+		$('form:last() button[name="btnBack"]').css('opacity','1');
 
 	}
 
@@ -122,6 +130,19 @@ function on_site_load() {
 		}
 	});
 
+	// Form1 Back Btn
+	$('form:first() button[name="btnBack"]').click(function(event) {
+		Caracal.Form1.previousPage();
+		$(this).css('opacity','0');
+		$('button[name="btn"]').css('opacity','0');
+	});
+
+	// Form2 Back Btn
+	$('form:last() button[name="btnBack"]').click(function(event) {
+		Caracal.Form2.previousPage();
+		$(this).css('opacity','0');
+		$('button[name="btn"]').css('opacity','0');
+	});
 
 	// Form Close
 
