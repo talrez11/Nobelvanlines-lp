@@ -75,6 +75,7 @@ function on_site_load() {
 
 		Caracal.Form1.nextPage();
 		$('form:first() button[name="btn"]').css('opacity','0');
+		$('form:first() div.controls').css('display','block');
 		$('form:first() button[name="btnBack"]').css('opacity','1');
 
 	}
@@ -110,6 +111,7 @@ function on_site_load() {
 
 		Caracal.Form2.nextPage();
 		$('form:last() button[name="btn1"]').css('opacity','0');
+		$('form:last() div.controls').css('display','block');
 		$('form:last() button[name="btnBack"]').css('opacity','1');
 
 	}
