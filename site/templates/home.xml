@@ -59,11 +59,15 @@
 									action="show"
 									text_id="contact_international"
 									/>
-
+								<div class="greeting">
+									<h2>Thank You</h2>
+								</div>
 						</div>
+
 					</div>
+
 				</div>
 			</div>
-				</body>
+		</body>
 	</html>
 </document>
