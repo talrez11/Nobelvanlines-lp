@@ -129,7 +129,30 @@ div#slides div.inner_wrap div.inner_form {
 	height: 450px;
 	background-color: rgba(255,255,255,0.9);
 	border: 1px solid white;
+	position: relative;
+}
 
+div#slides div.inner_wrap div.inner_form div.greeting {
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 25px;
+	width: 100%;
+	height: 85%;
+	background-color: black;
+	background-image: url(../images/like-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:150px 150px;
+	opacity: 0;
+	z-index: -1;
+	transition:all 1s;
+}
+
+div#slides div.inner_wrap div.inner_form div.greeting h2 {
+	text-align: center;
+	color: white;
+	font-size: 3em;
 }
 
 div#slides div.inner_wrap div.inner_form h2 {
@@ -190,7 +213,7 @@ div#slides div.inner_wrap div.inner_form div.form_container {
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 25px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset:first-of-type {
@@ -205,7 +228,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset:first-of-type button {
 	display: block;
 	margin-top: 30px;
-	margin-left: 70%;
+	margin-left: 73%;
 	text-align: right;
 	background-color: orange;
 	color: white;
@@ -249,21 +272,21 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 10px;
+	margin-top: 23px;
 	width: 270px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
-	width: 90px;
-	height: 35px;
+	width: 40px;
+	height: 20px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label span {
@@ -285,12 +308,13 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 	text-align: center;
 	height: 41px;
 	line-height: 100%;
+	font-size: 1.6em;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type div.controls {
 	display: block;
 	margin-top: -58px;
-	width: 535px;
+	width: 533px;
 	text-align: right;
 }
 
@@ -318,7 +342,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 25px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset:first-of-type {
@@ -377,21 +401,21 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 10px;
+	margin-top: 23px;
 	width: 270px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
-	width: 90px;
-	height: 35px;
+	width: 40px;
+	height: 20px;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label span {
@@ -413,6 +437,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 	text-align: center;
 	height: 41px;
 	line-height: 100%;
+	font-size: 1.6em;
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type div.controls {
