@@ -330,10 +330,11 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type div.controls {
-	display: block;
+	display: none;
 	margin-top: -58px;
 	width: 533px;
 	text-align: right;
+
 }
 
 div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type div.controls button {
