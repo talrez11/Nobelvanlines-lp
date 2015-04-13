@@ -11,11 +11,8 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<header>
-				<div class="inner_wrap">
-					<div class="logo">
-						<span></span>
-					</div>
 					<nav>
+						<a href="#" class="logo"></a>
 						<a href="#"><cms:text constant="home"/></a>
 						<a href="#"><cms:text constant="about"/></a>
 						<a href="#"><cms:text constant="moving"/></a>
@@ -24,46 +21,40 @@
 						<a href="#"><cms:text constant="reviews"/></a>
 						<a href="#"><cms:text constant="contact"/></a>
 					</nav>
-				</div>
 			</header>
 			<!-- Top Section image slides -->
 			<div id="slides">
-				<div class="slide"></div>
-				<div class="slide"></div>
-				<div class="slide"></div>
-				<div class="inner_wrap">
-					<div class="inner_form">
-						<h2><cms:text constant="form_title"/></h2>
-						<div class="form_menu">
-							<a
-								href="javascript:void(0);"
-								class="arrow next"
-								>
-								<cms:text constant="form_local"/>
-							</a>
-							<a
-								href="javascript:void(0);"
-								class="arrow previous"
-								>
-								<cms:text constant="form_inter"/>
-							</a>
-						</div>
-						<div class="form_container">
-								<cms:module
-									name="contact_form"
-									action="show"
-									text_id="contact_local"
-									/>
-								<cms:module
-									name="contact_form"
-									action="show"
-									text_id="contact_international"
-									/>
-								<div class="greeting">
-									<h2>Thank You</h2>
-								</div>
-						</div>
-
+				<span><cms:text constant="Need_to"/><strong><cms:text constant="MOVE"/></strong></span>
+				<div class="inner_form">
+					<h2><cms:text constant="form_title"/></h2>
+					<div class="form_menu">
+						<a
+							href="javascript:void(0);"
+							class="arrow next"
+							>
+							<cms:text constant="form_local"/>
+						</a>
+						<a
+							href="javascript:void(0);"
+							class="arrow previous"
+							>
+							<cms:text constant="form_inter"/>
+						</a>
+					</div>
+					<div class="form_container">
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_local"
+								/>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_international"
+								/>
+							<div class="greeting">
+								<h2>Thank You</h2>
+							</div>
 					</div>
 
 				</div>
