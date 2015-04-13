@@ -1,138 +1,55 @@
-/**
- *  Style Sheet
- *  Nobelvanlines-lp
- *
- * Copyright (c) 2014. by Way2CU, http://way2cu.com
- * Author: Tal Reznics
- */
 
-
- div.inner_wrap {
- 	display: block;
- 	margin-left: auto;
- 	margin-right: auto;
- 	width: 1200px;
- 	position: relative;
- }
-
- header {
- 	display: block;
- 	background-color: white;
- }
-
- header div.inner_wrap {
- 	padding-top: 40px;
- 	padding-bottom: 40px;
- 	text-align: right;
- }
-
-  header div.inner_wrap div.logo {
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: 0px;
-	background-image: url(../images/Untitled-1.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 102%;
-	width: 306px;
-	height: 181px;
-	z-index: 1;
-
-  }
-
- header div.inner_wrap div.logo span {
-	display: block;
- 	background-color: white;
- 	background-image: url(../images/logo.svg);
- 	background-repeat:no-repeat;
- 	background-position: center center;
- 	background-size:85%;
- 	width: 300px;
-	height: 140px;
-
- }
-
- header div.inner_wrap nav {
- 	display: inline-block;
- 	vertical-align: top;
-
- }
-
- header div.inner_wrap nav a {
-	display: inline-block;
-  	vertical-align: top;
-  	padding-right: 25px;
-  	color: black;
-  	text-decoration: none;
-	font-weight: 600;
-
- }
 
  /*Top Section Image Slides*/
 div#slides {
 	display: block;
 	position: relative;
-	width: 100%;
-	height: 800px;
-}
-div#slides div.slide {
-	display: block;
-	position: absolute;
-	top:0px;
-	left: 0px;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-image: url(../images/site-background-01.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 800px;
-	height: 800px;
-	width: 100%;
-	opacity: 1;
-	transition: opacity 3s;
+	background-position: center center;
+	min-height: 600px;
 }
 
-div#slides div.slide.visible {
-	opacity: 1;
-}
-
-div#slides div.slide:nth-of-type(1) {
-
-	background-image: url(../images/header-background.jpg);
-}
-
-div#slides div.slide:nth-of-type(2) {
-
-}
-
-div#slides div.slide:nth-of-type(3) {
-
-}
-
-div#slides div.inner_wrap {
+div#slides > span {
 	display: block;
-	position: relative;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	font-size: 3em;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+
+div#slides > span strong {
+	font-size: 1.3em;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 }
 
 /*FORM SECTION*/
 
-div#slides div.inner_wrap {
-	padding-top: 80px;
-
-
-}
-
-div#slides div.inner_wrap div.inner_form {
+div#slides div.inner_form {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 20px;
 	width: 1000px;
-	height: 450px;
 	background-color: rgba(255,255,255,0.9);
-	border: 1px solid white;
+	box-shadow: 7px 7px 0px black;
 	position: relative;
 }
 
-div#slides div.inner_wrap div.inner_form div.greeting {
+div#slides div.inner_form > h2 {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	background-color: #33485d;
+	color:white;
+	font-weight: 400;
+}
+
+div#slides div.inner_form div.greeting {
 	content: "";
 	position: absolute;
 	top:0px;
@@ -149,40 +66,35 @@ div#slides div.inner_wrap div.inner_form div.greeting {
 	transition:all 1s;
 }
 
-div#slides div.inner_wrap div.inner_form div.greeting h2 {
+div#slides div.inner_form div.greeting h2 {
 	text-align: center;
 	color: white;
 	font-size: 3em;
+
 }
 
-div#slides div.inner_wrap div.inner_form h2 {
-	display: block;
-	text-align: left;
-	color: #2b3d4f;
-	font-size: 1.9em;
-}
 
-div#slides div.inner_wrap div.inner_form div.form_menu {
+div#slides div.inner_form div.form_menu {
 	display: inline-block;
 	vertical-align: top;
-	width: 370px;
+	text-align: center;
+	width: 30%;
+	border:1px solid orange;
 
 }
 
-div#slides div.inner_wrap div.inner_form div.form_menu a {
+div#slides div.inner_form div.form_menu a {
 	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 80px;
-	text-align: left;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	text-decoration: none;
 	color:white;
-	border-radius: 5px;
 	font-weight: bold;
-	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(1) {
+div#slides div.inner_form div.form_menu a:nth-of-type(1) {
 	background-color:rgb(245, 145, 29);
 	background-image: url(../images/icon-truck.svg);
 	background-repeat: no-repeat;
@@ -190,7 +102,7 @@ div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(1) {
 	background-size: auto 35px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(2) {
+div#slides div.inner_form div.form_menu a:nth-of-type(2) {
 	margin-top: 25px;
 	background-color:#94a4a5;
 	background-image: url(../images/icon-airplane.svg);
@@ -199,7 +111,7 @@ div#slides div.inner_wrap div.inner_form div.form_menu a:nth-of-type(2) {
 	background-size: auto 25px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container {
+div#slides div.inner_form div.form_container {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: -5px;
@@ -210,13 +122,13 @@ div#slides div.inner_wrap div.inner_form div.form_container {
 	position: relative;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type {
+div#slides div.inner_form div.form_container form:first-of-type {
 	position: absolute;
 	top: 0px;
 	left: 25px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset:first-of-type {
+div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type {
 	display: inline-block;
 	vertical-align: top;
 	left: 110%;
@@ -225,7 +137,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 	transition:all 0.8s;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset:first-of-type button {
+div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type button {
 	display: block;
 	margin-top: 30px;
 	margin-left: 73%;
@@ -242,7 +154,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 	font-weight: bold;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type button[name="btnBack"]{
+div#slides div.inner_form div.form_container form:first-of-type button[name="btnBack"]{
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -261,7 +173,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type b
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset:last-of-type {
+div#slides div.inner_form div.form_container form:first-of-type fieldset:last-of-type {
 	position: absolute;
 	top: 0px;
 	left: 110%;
@@ -272,7 +184,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 	visibility: hidden;
 	transition:all 0.8s;
 }
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 10px;
@@ -280,39 +192,39 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 	position: relative;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label select {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label select {
 	width: 250px;
 	height: 45px;
 	text-align: center;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 23px;
 	width: 270px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox span {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label.checkbox input {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
 	height: 20px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label span {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label span {
 	display: block;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label input {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label input {
 	display: block;
 	padding-left: 5px;
 	font-size: 1.2em;
@@ -322,14 +234,14 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type f
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset label input[type="date"] {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label input[type="date"] {
 	text-align: center;
 	height: 41px;
 	line-height: 100%;
 	font-size: 1.6em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type div.controls {
+div#slides div.inner_form div.form_container form:first-of-type div.controls {
 	display: none;
 	margin-top: -58px;
 	width: 533px;
@@ -337,7 +249,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type d
 
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type div.controls button {
+div#slides div.inner_form div.form_container form:first-of-type div.controls button {
 	background-color: orange;
 	color: white;
 	border: none;
@@ -351,20 +263,20 @@ div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type d
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:first-of-type fieldset.visible {
+div#slides div.inner_form div.form_container form:first-of-type fieldset.visible {
 	visibility: visible;
 	left: 0%;
 }
 
 /*Second form*/
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type {
+div#slides div.inner_form div.form_container form:last-of-type {
 	position: absolute;
 	top: 0px;
 	left: 25px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset:first-of-type {
+div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type {
 	display: inline-block;
 	vertical-align: top;
 	left: 110%;
@@ -373,7 +285,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 	transition:all 0.8s;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset:first-of-type button {
+div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type button {
 	display: block;
 	margin-top: 30px;
 	margin-left: 73%;
@@ -390,7 +302,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 	font-weight: bold;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type button[name="btnBack"]{
+div#slides div.inner_form div.form_container form:last-of-type button[name="btnBack"]{
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -409,7 +321,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type bu
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset:last-of-type {
+div#slides div.inner_form div.form_container form:last-of-type fieldset:last-of-type {
 	position: absolute;
 	top: 0px;
 	left: 110%;
@@ -420,7 +332,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 	visibility: hidden;
 	transition:all 0.8s;
 }
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 10px;
@@ -428,39 +340,39 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 	position: relative;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label select {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label select {
 	width: 250px;
 	height: 45px;
 	text-align: center;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 23px;
 	width: 270px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox span {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label.checkbox input {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
 	height: 20px;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label span {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label span {
 	display: block;
 	font-size: 1.2em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label input {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label input {
 	display: block;
 	padding-left: 5px;
 	font-size: 1.2em;
@@ -470,21 +382,21 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fi
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset label input[type="date"] {
+div#slides div.inner_form div.form_container form:last-of-type fieldset label input[type="date"] {
 	text-align: center;
 	height: 41px;
 	line-height: 100%;
 	font-size: 1.6em;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type div.controls {
+div#slides div.inner_form div.form_container form:last-of-type div.controls {
 	display: block;
 	margin-top: -58px;
 	width: 533px;
 	text-align: right;
 }
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type div.controls button {
+div#slides div.inner_form div.form_container form:last-of-type div.controls button {
 	background-color: orange;
 	color: white;
 	border: none;
@@ -498,7 +410,7 @@ div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type di
 }
 
 
-div#slides div.inner_wrap div.inner_form div.form_container form:last-of-type fieldset.visible {
+div#slides div.inner_form div.form_container form:last-of-type fieldset.visible {
 	visibility: visible;
 	left: 0%;
 }
