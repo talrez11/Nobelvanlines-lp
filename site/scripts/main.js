@@ -54,16 +54,14 @@ Site.on_load = function() {
  	Caracal.slides = new PageControl('div#slides', 'div.slide');
  	$('div.form_container form:first()').css('display','block');
  	$('div.form_container form:last()').css('display','none');
+ 	$('a.arrow.next').css('backgroundColor','#f29b11');
+ 	$('a.arrow.next').css('color','black');
 
-	// configure page control for sliders
-	Caracal.slides
-				.setInterval(5000)
-				.setWrapAround(true);
 
-	// Google Autocomplete
 	$('a.arrow.next').click(function(event) {
-		$(this).css('backgroundColor','#f5911d');
-		$('a.arrow.previous').css('backgroundColor','#94a4a5');
+		$(this).css('backgroundColor','#f29b11');
+		$(this).css('color','black');
+		$('a.arrow.previous').css('backgroundColor','#ebeff0');
 		$('div.form_container form:first()').css('display','block');
 		$('div.form_container form:last()').css('display','none');
 		$('div#slides div.inner_wrap div.inner_form div.greeting').css('z-index','-1');
@@ -72,8 +70,9 @@ Site.on_load = function() {
 	});
 
 	$('a.arrow.previous').click(function(event) {
-		$(this).css('backgroundColor','#f5911d');
-		$('a.arrow.next').css('backgroundColor','#94a4a5');
+		$(this).css('backgroundColor','#f29b11');
+		$(this).css('color','black');
+		$('a.arrow.next').css('backgroundColor','#ebeff0');
 		$('div.form_container form:first()').css('display','none');
 		$('div.form_container form:last()').css('display','block');
 		$('div#slides div.inner_wrap div.inner_form div.greeting').css('z-index','-1');
@@ -110,8 +109,10 @@ Site.on_load = function() {
 
 		Caracal.Form1.nextPage();
 		$('form:first() button[name="btn"]').css('opacity','0');
-		$('form:first() div.controls').css('display','block');
+		$('form:first() button[name="btn"]').css('visibility','hidden');
+		$('form:first() div.controls button').css('display','block');
 		$('form:first() button[name="btnBack"]').css('opacity','1');
+		$('form:first() button[name="btnBack"]').css('visibility','visible');
 
 	}
 
@@ -146,8 +147,9 @@ Site.on_load = function() {
 
 		Caracal.Form2.nextPage();
 		$('form:last() button[name="btn1"]').css('opacity','0');
-		$('form:last() div.controls').css('display','block');
+		$('form:last() div.controls button').css('display','block');
 		$('form:last() button[name="btnBack"]').css('opacity','1');
+		$('form:last() button[name="btnBack"]').css('visibility','visible');
 
 	}
 
@@ -171,15 +173,55 @@ Site.on_load = function() {
 	$('form:first() button[name="btnBack"]').click(function(event) {
 		Caracal.Form1.previousPage();
 		$(this).css('opacity','0');
-		$('button[name="btn"]').css('opacity','0');
+		$(this).css('visibility','hidden');
+		$('form:first() div.controls button').css('display','none');
+		$('button[name="btn"]').css('opacity','1');
+		$('button[name="btn"]').css('visibility','visible');
 	});
 
 	// Form2 Back Btn
 	$('form:last() button[name="btnBack"]').click(function(event) {
 		Caracal.Form2.previousPage();
 		$(this).css('opacity','0');
-		$('button[name="btn"]').css('opacity','0');
+		$(this).css('visibility','hidden');
+		$('form:last() div.controls button').css('display','none');
+		$('button[name="btn1"]').css('opacity','1');
+		$('button[name="btn1"]').css('visibility','visible');
 	});
+
+
+	//  checkbox function
+	function checked() {
+		var input  = $(this);
+		if(input.is(':checked')) {
+			$('form:first-of-type fieldset label:nth-of-type(3)')
+																.css('visibility','visible')
+																.css('opacity','1');
+		} else {
+			$('form:first-of-type fieldset label:nth-of-type(3)')
+																.css('visibility','hidden')
+																.css('opacity','0');
+		}
+	}
+
+	function checked2() {
+		var input  = $(this);
+		if(input.is(':checked')) {
+			$('form:last-of-type fieldset label:nth-of-type(3)')
+																.css('visibility','visible')
+																.css('opacity','1');
+		} else {
+			$('form:last-of-type fieldset label:nth-of-type(3)')
+																.css('visibility','hidden')
+																.css('opacity','0');
+		}
+	}
+
+	$('input[name="extra_stop"]').on('click',checked);
+	$('input[name="country_extra_stop"]').on('click',checked2);
+
+
+
 
 	// Form Close
 
