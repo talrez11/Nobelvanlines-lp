@@ -5,6 +5,7 @@
     "form_inter": "INTERNATIONAL",
     "form_local": "LOCAL AND LONG DISTANCE",
     "form_title": "Let us make it easy for you!",
+    "btn_title":"REQUEST A QUOTE",
     "home": "Home",
     "international": "International Moving",
     "moving": "Moving Services",
@@ -12,5 +13,11 @@
     "send": "GO",
     "site_title": "NobelVanlines",
     "Need_to":"Need to",
-    "MOVE":"MOVE?"
+    "MOVE":"MOVE?",
+    "state":"State of Florida",
+    "american":"American Moving & Storage Association",
+    "florida":"Florida Movers and Ware housemens Association",
+    "promover":"ProMover certification program",
+    "inter":"International Association of Movers",
+    "copyright": "Designed and developed by<a href=\"#\">Way2cu</a> All rights reserved."
 }
