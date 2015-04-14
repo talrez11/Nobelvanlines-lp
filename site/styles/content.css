@@ -11,11 +11,25 @@ div#slides {
 	min-height: 600px;
 }
 
+div#slides:before {
+	content: "";
+	position: absolute;
+	bottom: -100px;
+	margin-left: -100px;
+	left: 50%;
+	background-image: url(../images/satisfaction-ribbon.svg);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center center;
+	width: 200px;
+	height: 200px;
+}
+
 div#slides > span {
 	display: block;
-	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align: center;
 	color: white;
 	font-size: 3em;
 	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
@@ -32,9 +46,9 @@ div#slides div.inner_form {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
-	background-color: rgba(255,255,255,0.9);
-	box-shadow: 7px 7px 0px black;
+	width: 850px;
+	background-color: white;
+	box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.4);
 	position: relative;
 }
 
@@ -53,9 +67,9 @@ div#slides div.inner_form div.greeting {
 	content: "";
 	position: absolute;
 	top:0px;
-	left: 25px;
+	left:0px;
 	width: 100%;
-	height: 85%;
+	height: 100%;
 	background-color: black;
 	background-image: url(../images/like-icon.svg);
 	background-repeat: no-repeat;
@@ -78,98 +92,153 @@ div#slides div.inner_form div.form_menu {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	width: 30%;
-	border:1px solid orange;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: calc(30% - 40px);
 
+}
+
+div#slides div.inner_form div.form_menu h4 {
+	color: #33485d;
+	margin: 0px;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
 }
 
 div#slides div.inner_form div.form_menu a {
 	display: block;
-	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	width: 80%;
+	background-color:#ebeff0;
 	text-decoration: none;
-	color:white;
+	color:black;
 	font-weight: bold;
 }
 
 div#slides div.inner_form div.form_menu a:nth-of-type(1) {
-	background-color:rgb(245, 145, 29);
-	background-image: url(../images/icon-truck.svg);
+	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #ebeff0;
+	position: relative;
+}
+
+div#slides div.inner_form div.form_menu a:nth-of-type(1):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -40px;
+	background-image: url(../images/icons-plane-truck-copy.svg);
 	background-repeat: no-repeat;
-	background-position: 10px center;
-	background-size: auto 35px;
+	background-position: 0px -80px;
+	background-size: 150px 150px;
+	width: 80px;
+	height: 80px;
 }
 
 div#slides div.inner_form div.form_menu a:nth-of-type(2) {
-	margin-top: 25px;
-	background-color:#94a4a5;
-	background-image: url(../images/icon-airplane.svg);
-	background-repeat: no-repeat;
-	background-position: 10px center;
-	background-size: auto 25px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #ebeff0;
+	position: relative;
+
 }
 
+div#slides div.inner_form div.form_menu a:nth-of-type(2):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -40px;
+	background-image: url(../images/icons-plane-truck-copy.svg);
+	background-repeat: no-repeat;
+	background-position: -70px -80px;
+	background-size: 150px 150px;
+	width: 80px;
+	height: 80px;
+}
 div#slides div.inner_form div.form_container {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: -5px;
-	padding-left: 50px;
-	width: 550px;
-	height:420px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	width: 70%;
 	overflow: hidden;
 	position: relative;
 }
 
-div#slides div.inner_form div.form_container form:first-of-type {
+div#slides div.inner_form div.form_container form {
 	position: absolute;
 	top: 0px;
-	left: 25px;
+	left: 0px;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type {
 	display: inline-block;
 	vertical-align: top;
+	padding: 0px 20px;
+	margin: 0px;
 	left: 110%;
+	background-image: url(../images/fill-in-the-form.svg);
+	background-repeat: no-repeat;
+	background-size: 320px 70px;
+	background-position: 20px bottom;
 	border: none;
 	position: relative;
-	transition:all 0.8s;
+	transition: all 0.8s;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type button {
 	display: block;
 	margin-top: 30px;
-	margin-left: 73%;
-	text-align: right;
-	background-color: orange;
+	margin-left: auto;
+	margin-right: 20px;
+	background-color:#15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
+	transition:all 0.3s;
+}
+
+div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type button:hover {
+	background-color:#16731c;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type button[name="btnBack"]{
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	text-align: right;
-	background-color: orange;
+	bottom: 5px;
+	left: 20px;
+	background-color: #15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
 	opacity: 0;
+	visibility: hidden;
+}
+div#slides div.inner_form div.form_container form:first-of-type button[name="btnBack"]:hover {
+	background-color: #16731c;
 }
 
 
@@ -187,79 +256,103 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset:last-of
 div#slides div.inner_form div.form_container form:first-of-type fieldset label {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 10px;
-	width: 270px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50%;
 	position: relative;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label select {
-	width: 250px;
-	height: 45px;
+	width: 82%;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	text-align: center;
-	font-size: 1.2em;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 23px;
-	width: 270px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50%;
 }
 
-div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox span {
+div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox > span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.2em;
+	margin-top: 25px;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
+	margin-top: 25px;
 	width: 40px;
-	height: 20px;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label span {
 	display: block;
-	font-size: 1.2em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label input {
 	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-left: 5px;
-	font-size: 1.2em;
-	height: 40px;
-	width: 240px;
+	width: 80%;
+	border-radius: 5px;
+	border:1px solid #33485d;
 	position: relative;
 }
 
+div#slides div.inner_form div.form_container form:first-of-type fieldset label:nth-of-type(3) {
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.8s;
+}
 
 div#slides div.inner_form div.form_container form:first-of-type fieldset label input[type="date"] {
 	text-align: center;
-	height: 41px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	line-height: 100%;
-	font-size: 1.6em;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:first-of-type div.controls {
-	display: none;
-	margin-top: -58px;
-	width: 533px;
+	position: absolute;
+	right: 40px;
+	bottom: 0px;
 	text-align: right;
 
 }
 
 div#slides div.inner_form div.form_container form:first-of-type div.controls button {
-	background-color: orange;
+	display: none;
+	margin-top: 30px;
+	margin-left: auto;
+	background-color:#15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
+	transition: all 0.3s;
+}
+
+div#slides div.inner_form div.form_container form:first-of-type div.controls button:hover {
+	background-color: #16731c;
 }
 
 
@@ -270,54 +363,62 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset.visible
 
 /*Second form*/
 
-div#slides div.inner_form div.form_container form:last-of-type {
-	position: absolute;
-	top: 0px;
-	left: 25px;
-}
-
 div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type {
 	display: inline-block;
 	vertical-align: top;
+	padding: 0px 20px;
+	margin: 0px;
 	left: 110%;
+	background-image: url(../images/fill-in-the-form.svg);
+	background-repeat: no-repeat;
+	background-size: 320px 70px;
+	background-position: 20px bottom;
 	border: none;
 	position: relative;
-	transition:all 0.8s;
+	transition: all 0.8s;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type button {
 	display: block;
 	margin-top: 30px;
-	margin-left: 73%;
-	text-align: right;
-	background-color: orange;
+	margin-left: auto;
+	margin-right: 20px;
+	background-color:#15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
+	transition:all 0.3s;
+}
+
+div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type button:hover {
+	background-color:#16731c;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type button[name="btnBack"]{
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	text-align: right;
-	background-color: orange;
+	bottom: 5px;
+	left: 20px;
+	background-color: #15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
 	opacity: 0;
+	visibility: hidden;
+}
+div#slides div.inner_form div.form_container form:last-of-type button[name="btnBack"]:hover {
+	background-color: #16731c;
 }
 
 
@@ -335,78 +436,103 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset:last-of-
 div#slides div.inner_form div.form_container form:last-of-type fieldset label {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 10px;
-	width: 270px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50%;
 	position: relative;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label select {
-	width: 250px;
-	height: 45px;
+	width: 82%;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	text-align: center;
-	font-size: 1.2em;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 23px;
-	width: 270px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50%;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.2em;
+	margin-top: 25px;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label.checkbox input {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
-	height: 20px;
+	margin-top: 25px;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label span {
 	display: block;
-	font-size: 1.2em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label input {
 	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-left: 5px;
-	font-size: 1.2em;
-	height: 40px;
-	width: 240px;
+	width: 80%;
+	border-radius: 5px;
+	border:1px solid #33485d;
 	position: relative;
 }
 
+div#slides div.inner_form div.form_container form:last-of-type fieldset label:nth-of-type(3) {
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.8s;
+}
 
 div#slides div.inner_form div.form_container form:last-of-type fieldset label input[type="date"] {
 	text-align: center;
-	height: 41px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	line-height: 100%;
-	font-size: 1.6em;
+	border-radius: 5px;
+	border:1px solid #33485d;
 }
 
 div#slides div.inner_form div.form_container form:last-of-type div.controls {
-	display: block;
-	margin-top: -58px;
-	width: 533px;
+	position: absolute;
+	right: 40px;
+	bottom: 0px;
 	text-align: right;
+
 }
 
 div#slides div.inner_form div.form_container form:last-of-type div.controls button {
-	background-color: orange;
+	display: none;
+	margin-top: 30px;
+	margin-left: auto;
+	background-color:#15a51d;
 	color: white;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-size: 1.6em;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
 	cursor: pointer;
 	font-weight: bold;
+	transition: all 0.3s;
+}
+
+div#slides div.inner_form div.form_container form:last-of-type div.controls button:hover {
+	background-color: #16731c;
 }
 
 
@@ -414,6 +540,117 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset.visible 
 	visibility: visible;
 	left: 0%;
 }
+
+
+div.wrap {
+	display: block;
+	background-color: white;
+	padding:0px calc((100vw - 1200px) / 2);
+}
+
+div.wrap div.about_article {
+	display: block;
+	padding-top: 100px;
+}
+
+div.wrap div.about_article h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color:#33485d;
+	width: 500px;
+}
+
+div.wrap div.about_article p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color:#33485d;
+	font-size: 1.2em;
+	width: 1100px;
+}
+
+div.wrap > span {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 220px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	width: calc(20% - 30px);
+	font-size: 1.2em;
+	color:#33485d;
+	position: relative;
+}
+
+div.wrap > span:before {
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 50%;
+	margin-left: -100px;
+	background-image: url(../images/logos-sprite.jpg);
+	background-repeat: no-repeat;
+	background-size: 1000px 200px;
+	background-position: 0px 0px;
+	width: 200px;
+	height: 200px;
+	border:1px solid #bcc2c6;
+}
+
+div.wrap > span:nth-of-type(2):before {
+	background-position: -200px 0px;
+}
+
+div.wrap > span:nth-of-type(3):before {
+	background-position: -400px 0px;
+}
+
+div.wrap > span:nth-of-type(4):before {
+	background-position: -600px 0px;
+}
+
+div.wrap > span:nth-of-type(5):before {
+	background-position: -800px 0px;
+}
+
+/*FOOTER*/
+
+footer {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+	background-color: #212121;
+	text-align: center;
+}
+
+footer span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	background-image: url(../images/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	width: 270px;
+	color: white;
+	text-align: left;
+}
+footer span a {
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+
+footer span a {
+	padding-left: 5px;
+	color:#449bb5;
+}
+
 
 
 
