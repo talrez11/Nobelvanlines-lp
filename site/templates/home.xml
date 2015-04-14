@@ -28,6 +28,7 @@
 				<div class="inner_form">
 					<h2><cms:text constant="form_title"/></h2>
 					<div class="form_menu">
+						<h4><cms:text constant="btn_title"/></h4>
 						<a
 							href="javascript:void(0);"
 							class="arrow next"
@@ -56,9 +57,25 @@
 								<h2>Thank You</h2>
 							</div>
 					</div>
-
 				</div>
 			</div>
+			<div class="wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					class="about"
+					text_id="about_article"
+					template="parts/article.xml"
+					/>
+				<span><cms:text constant="state"/></span>
+				<span><cms:text constant="american"/></span>
+				<span><cms:text constant="florida"/></span>
+				<span><cms:text constant="promover"/></span>
+				<span><cms:text constant="inter"/></span>
+			</div>
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
 		</body>
 	</html>
 </document>
