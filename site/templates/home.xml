@@ -10,6 +10,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+		<cms:desktop>
 			<header>
 					<nav>
 						<a href="#" class="logo"></a>
@@ -77,6 +78,79 @@
 			<footer>
 				<span><cms:text constant="copyright"/></span>
 			</footer>
+		</cms:desktop>
+<!-- MOBILE VERSION -->
+		<cms:mobile>
+			<header>
+					<div class="mobile_title">
+						<a href="#" class="logo"></a>
+						<a href="javascript:void(0)" class="menu"></a>
+					</div>
+					<nav class="mobile_menu">
+						<a href="#"><cms:text constant="home"/></a>
+						<a href="#"><cms:text constant="about"/></a>
+						<a href="#"><cms:text constant="moving"/></a>
+						<a href="#"><cms:text constant="international"/></a>
+						<a href="#"><cms:text constant="estimate"/></a>
+						<a href="#"><cms:text constant="reviews"/></a>
+						<a href="#"><cms:text constant="contact"/></a>
+					</nav>
+					<span><cms:text constant="Need_to"/><strong><cms:text constant="MOVE"/></strong></span>
+			</header>
+			<!-- Top Section image slides -->
+				<div class="inner_form">
+					<h2><cms:text constant="form_title"/></h2>
+					<div class="form_menu">
+						<h4><cms:text constant="btn_title"/></h4>
+						<a
+							href="javascript:void(0);"
+							class="arrow next"
+							>
+							<cms:text constant="form_local"/>
+						</a>
+						<a
+							href="javascript:void(0);"
+							class="arrow previous"
+							>
+							<cms:text constant="form_inter"/>
+						</a>
+					</div>
+					<div class="form_container">
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_local"
+								/>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_international"
+								/>
+
+					</div>
+					<div class="greeting">
+								<p><cms:text constant="greeting1"/></p>
+								<p><cms:text constant="greeting2"/></p>
+							</div>
+				</div>
+			<div class="wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					class="about"
+					text_id="about_article"
+					template="parts/article.xml"
+					/>
+				<span><cms:text constant="state"/></span>
+				<span><cms:text constant="american"/></span>
+				<span><cms:text constant="florida"/></span>
+				<span><cms:text constant="promover"/></span>
+				<span><cms:text constant="inter"/></span>
+			</div>
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
+	</cms:mobile>
 		</body>
 	</html>
 </document>
