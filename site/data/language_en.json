@@ -11,6 +11,8 @@
     "moving": "Moving Services",
     "reviews": "Reviews",
     "send": "GO",
+    "greeting1":"Thank you,",
+    "greeting2":"we will contact you shortly",
     "site_title": "NobelVanlines",
     "Need_to":"Need to",
     "MOVE":"MOVE?",
@@ -19,5 +21,5 @@
     "florida":"Florida Movers and Ware housemens Association",
     "promover":"ProMover certification program",
     "inter":"International Association of Movers",
-    "copyright": "Designed and developed by<a href=\"#\">Way2cu</a> All rights reserved."
+    "copyright": "Designed and developed by<a href=\"http://www.way2cu.com\">Way2cu</a> All rights reserved."
 }
