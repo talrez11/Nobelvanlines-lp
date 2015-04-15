@@ -145,6 +145,7 @@ Site.on_load = function() {
 			return false;
 		}
 
+
 		Caracal.Form2.nextPage();
 		$('form:last() button[name="btn1"]').css('opacity','0');
 		$('form:last() div.controls button').css('display','block');
@@ -194,26 +195,26 @@ Site.on_load = function() {
 	function checked() {
 		var input  = $(this);
 		if(input.is(':checked')) {
-			$('form:first-of-type fieldset label:nth-of-type(3)')
-																.css('visibility','visible')
-																.css('opacity','1');
+			$('form:first() fieldset:first-of-type label:nth-of-type(3)')
+															.css('visibility','visible')
+															.css('opacity','1');
 		} else {
-			$('form:first-of-type fieldset label:nth-of-type(3)')
-																.css('visibility','hidden')
-																.css('opacity','0');
+			$('form:first() fieldset:first-of-type label:nth-of-type(3)')
+															.css('visibility','hidden')
+															.css('opacity','0');
 		}
 	}
 
 	function checked2() {
 		var input  = $(this);
 		if(input.is(':checked')) {
-			$('form:last-of-type fieldset label:nth-of-type(3)')
-																.css('visibility','visible')
-																.css('opacity','1');
+			$('form:last() fieldset:first-of-type label:nth-of-type(3)')
+															.css('visibility','visible')
+															.css('opacity','1');
 		} else {
-			$('form:last-of-type fieldset label:nth-of-type(3)')
-																.css('visibility','hidden')
-																.css('opacity','0');
+			$('form:last() fieldset:first-of-type label:nth-of-type(3)')
+															.css('visibility','hidden')
+															.css('opacity','0');
 		}
 	}
 
@@ -229,14 +230,18 @@ Site.on_load = function() {
 			$('form').hide();
 			$('div.send').hide();
 			$('div.inner_form div.greeting').css('opacity','1');
-			$('div.inner_form div.greeting').css('z-index','2');
+			$('div.inner_form div.greeting').css('z-index','1');
+			$('div.form_menu').css('opacity','0')
+							  .css('visibility','hidden');
 			return false;
 		});
 	$('form:last()').on('dialog-show', function() {
 			$('form').hide();
 			$('div.send').hide();
 			$('div.inner_form div.greeting').css('opacity','1');
-			$('div.inner_form div.greeting').css('z-index','2');
+			$('div.inner_form div.greeting').css('z-index','1');
+			$('div.form_menu').css('opacity','0')
+							  .css('visibility','hidden');
 			return false;
 		});
 
