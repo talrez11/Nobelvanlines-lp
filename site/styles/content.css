@@ -32,12 +32,13 @@ div#slides > span {
 	text-align: center;
 	color: white;
 	font-size: 3em;
-	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 div#slides > span strong {
 	font-size: 1.3em;
-	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+	padding-left: 5px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 /*FORM SECTION*/
@@ -67,24 +68,21 @@ div#slides div.inner_form div.greeting {
 	content: "";
 	position: absolute;
 	top:0px;
-	left:0px;
+	left:-130px;
 	width: 100%;
 	height: 100%;
-	background-color: black;
-	background-image: url(../images/like-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size:150px 150px;
+	padding-top: 100px;
+	background-color: white;
 	opacity: 0;
 	z-index: -1;
 	transition:all 1s;
 }
 
-div#slides div.inner_form div.greeting h2 {
+div#slides div.inner_form div.greeting p {
+	margin: 0px;
 	text-align: center;
-	color: white;
-	font-size: 3em;
-
+	color: #33485d;
+	font-size: 1.7em;
 }
 
 
@@ -211,6 +209,7 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset:first-o
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 1.3em;
+	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
 	transition:all 0.3s;
@@ -233,6 +232,7 @@ div#slides div.inner_form div.form_container form:first-of-type button[name="btn
 	padding-right: 30px;
 	font-size: 1.3em;
 	cursor: pointer;
+	border-radius: 5px;
 	font-weight: bold;
 	opacity: 0;
 	visibility: hidden;
@@ -289,6 +289,7 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset label.c
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 25px;
+	margin-left: 10px;
 	width: 40px;
 	border-radius: 5px;
 	border:1px solid #33485d;
@@ -311,7 +312,7 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset label i
 	position: relative;
 }
 
-div#slides div.inner_form div.form_container form:first-of-type fieldset label:nth-of-type(3) {
+div#slides div.inner_form div.form_container form:first-of-type fieldset:first-of-type label:nth-of-type(3) {
 	visibility: hidden;
 	opacity: 0;
 	transition:all 0.8s;
@@ -347,6 +348,7 @@ div#slides div.inner_form div.form_container form:first-of-type div.controls but
 	padding-right: 30px;
 	font-size: 1.3em;
 	cursor: pointer;
+	border-radius: 5px;
 	font-weight: bold;
 	transition: all 0.3s;
 }
@@ -391,6 +393,7 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 1.3em;
+	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
 	transition:all 0.3s;
@@ -413,6 +416,7 @@ div#slides div.inner_form div.form_container form:last-of-type button[name="btnB
 	padding-right: 30px;
 	font-size: 1.3em;
 	cursor: pointer;
+	border-radius: 5px;
 	font-weight: bold;
 	opacity: 0;
 	visibility: hidden;
@@ -491,7 +495,7 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset label in
 	position: relative;
 }
 
-div#slides div.inner_form div.form_container form:last-of-type fieldset label:nth-of-type(3) {
+div#slides div.inner_form div.form_container form:last-of-type fieldset:first-of-type label:nth-of-type(3) {
 	visibility: hidden;
 	opacity: 0;
 	transition:all 0.8s;
@@ -526,6 +530,7 @@ div#slides div.inner_form div.form_container form:last-of-type div.controls butt
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 1.3em;
+	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
 	transition: all 0.3s;
@@ -621,7 +626,7 @@ div.wrap > span:nth-of-type(5):before {
 
 footer {
 	display: block;
-	padding:20px calc((100vw - 1200px) / 2);
+	padding:0px calc((100vw - 1200px) / 2);
 	background-color: #212121;
 	text-align: center;
 }
@@ -629,8 +634,8 @@ footer {
 footer span {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-left: 40px;
 	background-image: url(../images/way2cu-color.svg);
 	background-repeat: no-repeat;
@@ -651,7 +656,41 @@ footer span a {
 	color:#449bb5;
 }
 
+/*Tablet Version*/
 
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+header nav a.logo {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 150px 100px;
+  width: 150px;
+  height: 100px;
+}
+
+header nav a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.wrap {
+	text-align: center;
+}
+
+div.wrap div.about_article p {
+	width: 900px;
+
+}
+
+div.wrap > span {
+    width: calc(30% - 30px);
+}
+
+}
 
 
 
