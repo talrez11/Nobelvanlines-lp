@@ -117,7 +117,6 @@ Site.on_load = function() {
 	}
 
 	function validateForm2() {
-
 		var from = $('fieldset input[name="country_from"]').val();
 		var to = $('fieldset input[name="country_to"]').val();
 		var date = $('fieldset input[name="country_date"]').val();
@@ -244,6 +243,23 @@ Site.on_load = function() {
 							  .css('visibility','hidden');
 			return false;
 		});
+
+	if (Site.is_mobile()) {
+
+		$('form:first()').on('dialog-show', function() {
+			$('form').hide();
+			$('div.send').hide();
+			$('div.inner_form div.greeting').css('opacity','1');
+			$('div.inner_form div.greeting').css('z-index','1');
+			$('div.form_menu').css('opacity','0')
+							  .css('visibility','hidden');
+			$('div.inner_form div.form_container').css('height','0px');
+			$(window).scrollTop(0);
+
+			return false;
+		});
+
+	}
 
 }
 
