@@ -1,0 +1,750 @@
+/**
+ * Main Style Sheet
+ * Site Name NobelVanlines
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+header {
+	display: block;
+	text-align: center;
+	background-image: url(../images/site-background-02.jpg);
+	background-repeat: no-repeat;
+	background-position: center 70px;
+	background-size: 100% auto;
+
+}
+
+header div.mobile_title {
+	height: 70px;
+	background-color:white;
+}
+
+header .mobile_title a.menu {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  background-image: url(../images/nav-menu.svg);
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: auto 30px;
+  transition: 0.3s all;
+}
+
+/*.mobile_title.menu_visible a.menu {
+  background-position: 20px center;
+}*/
+
+header div.mobile_title a.logo {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 100px;
+	width: 150px;
+	height: 70px;
+}
+
+.mobile_menu {
+	text-align: left;
+}
+
+ .mobile_menu a {
+	display:block;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:black;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(246, 152, 31, 0.95);
+	font-weight: bold;
+	transition:all 0.3s;
+}
+
+header > span {
+	display: block;
+	padding-top: 90px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+header > span strong {
+	display: block;
+	font-size: 1.3em;
+	padding-left: 5px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+header div.form_menu {
+	display:block;
+	text-align: center;
+}
+
+header div.form_menu h4 {
+	color: #33485d;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.8em;
+}
+
+div.inner_form {
+	display: block;
+	background-color: white;
+	position: relative;
+}
+
+div.inner_form div.greeting {
+	content: "";
+	position: absolute;
+	bottom:75px;
+	left:0px;
+	width: 100%;
+
+	background-color: white;
+	opacity: 0;
+	z-index: -1;
+	transition:all 1s;
+}
+
+ div.inner_form div.greeting p {
+	margin: 0px;
+	text-align: center;
+	color: #33485d;
+	font-size: 1.4em;
+}
+
+div.inner_form > h2 {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	background-color: #33485d;
+	font-size: 1.4em;
+	color:white;
+	font-weight: 400;
+}
+
+div.inner_form div.form_menu {
+	display:block;
+	text-align: center;
+
+}
+
+div.inner_form div.form_menu h4 {
+	color: #33485d;
+	margin: 0px;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+div.inner_form div.form_menu a {
+	display:inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 40%;
+	background-color:#ebeff0;
+	text-decoration: none;
+	color:black;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+div.inner_form div.form_menu a:nth-of-type(1) {
+	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #ebeff0;
+	position: relative;
+}
+
+div.inner_form div.form_menu a:nth-of-type(1):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -40px;
+	background-image: url(../images/icons-plane-truck-copy.svg);
+	background-repeat: no-repeat;
+	background-position: 0px -80px;
+	background-size: 150px 150px;
+	width: 80px;
+	height: 80px;
+}
+
+div.inner_form div.form_menu a:nth-of-type(2) {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #ebeff0;
+	position: relative;
+
+}
+
+div.inner_form div.form_menu a:nth-of-type(2):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -40px;
+	background-image: url(../images/icons-plane-truck-copy.svg);
+	background-repeat: no-repeat;
+	background-position: -70px -80px;
+	background-size: 150px 150px;
+	width: 80px;
+	height: 80px;
+}
+
+div.inner_form div.form_container {
+	display:block;
+	text-align: center;
+	background-image: url(../images/middle-section-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	height: 560px;
+	overflow: hidden;
+	position: relative;
+}
+
+div.inner_form div.form_container form {
+	display: block;
+	top: 0px;
+	left: 0px;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:first-of-type {
+	display:block;
+	padding: 0px 20px;
+	margin: 0px;
+	left: 110%;
+	border: none;
+	position: relative;
+	transition: all 0.8s;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:first-of-type:before {
+	content: "";
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	margin-left: -150px;
+	background-image: url(../images/fill-in-the-form.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 300px 70px;
+	width: 300px;
+	height: 70px;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:first-of-type button {
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 0px;
+	background-color:#15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition:all 0.3s;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:first-of-type button:hover {
+	background-color:#16731c;
+}
+
+div.inner_form div.form_container form:first-of-type button[name="btnBack"]{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	background-color: #15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+}
+
+div.inner_form div.form_container form:first-of-type button[name="btnBack"]:hover {
+	background-color: #16731c;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:last-of-type {
+	position: absolute;
+	top: 80px;
+	left: 110%;
+	width: 95%;
+	height: 100%;
+	border: none;
+	overflow: hidden;
+	visibility: hidden;
+	transition:all 0.8s;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 95%;
+	position: relative;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label select {
+	width: 98%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #33485d;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label.checkbox {
+	display:block;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label.checkbox > span {
+	display:inline-block;
+	vertical-align: top;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label.checkbox input {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 5px;
+	margin-top: 0px;
+	width: 40px;
+	height: 28px;
+	border: 1px solid #33485d;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label span {
+	display: block;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label input {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 95%;
+	border-radius: 5px;
+	border:1px solid #33485d;
+	position: relative;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset:first-of-type label:nth-of-type(3) {
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.8s;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset label input[type="date"] {
+	text-align: center;
+	width: 96%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height: 100%;
+	border-radius: 5px;
+	border:1px solid #33485d;
+}
+
+div.inner_form div.form_container form:first-of-type div.controls {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	text-align: right;
+
+}
+
+div.inner_form div.form_container form:first-of-type div.controls button {
+	display: none;
+	margin-top: 30px;
+	margin-left: auto;
+	background-color:#15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+div.inner_form div.form_container form:first-of-type div.controls button:hover {
+	background-color: #16731c;
+}
+
+div.inner_form div.form_container form:first-of-type fieldset.visible {
+	visibility: visible;
+	left: 0%;
+}
+
+/*Seconf form*/
+
+div.inner_form div.form_container form:last-of-type fieldset:first-of-type {
+	display:block;
+	padding: 0px 20px;
+	margin: 0px;
+	left: 110%;
+	border: none;
+	position: relative;
+	transition: all 0.8s;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset:first-of-type:before {
+	content: "";
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	margin-left: -150px;
+	background-image: url(../images/fill-in-the-form.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 300px 70px;
+	width: 300px;
+	height: 70px;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset:first-of-type button {
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 0px;
+	background-color:#15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition:all 0.3s;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset:first-of-type button:hover {
+	background-color:#16731c;
+}
+
+div.inner_form div.form_container form:last-of-type button[name="btnBack"]{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	background-color: #15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+}
+
+div.inner_form div.form_container form:last-of-type button[name="btnBack"]:hover {
+	background-color: #16731c;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset:last-of-type {
+	position: absolute;
+	top: 80px;
+	left: 110%;
+	width: 95%;
+	height: 100%;
+	border: none;
+	overflow: hidden;
+	visibility: hidden;
+	transition:all 0.8s;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 95%;
+	position: relative;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label select {
+	width: 98%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #33485d;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label.checkbox {
+	display:block;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label.checkbox > span {
+	display:inline-block;
+	vertical-align: top;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label.checkbox input {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 5px;
+	margin-top: 0px;
+	width: 40px;
+	height: 28px;
+	border: 1px solid #33485d;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label span {
+	display: block;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label input {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 95%;
+	border-radius: 5px;
+	border:1px solid #33485d;
+	position: relative;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset:first-of-type label:nth-of-type(3) {
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.8s;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset label input[type="date"] {
+	text-align: center;
+	width: 96%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height: 100%;
+	border-radius: 5px;
+	border:1px solid #33485d;
+}
+
+div.inner_form div.form_container form:last-of-type div.controls {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	text-align: right;
+
+}
+
+div.inner_form div.form_container form:last-of-type div.controls button {
+	display: none;
+	margin-top: 30px;
+	margin-left: auto;
+	background-color:#15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+div.inner_form div.form_container form:last-of-type div.controls button:hover {
+	background-color: #16731c;
+}
+
+div.inner_form div.form_container form:last-of-type fieldset.visible {
+	visibility: visible;
+	left: 0%;
+}
+
+div.wrap {
+	display: block;
+	text-align: center;
+	background-color: white;
+	position: relative;
+}
+
+
+
+div.wrap div.about_article {
+	display: block;
+}
+
+div.wrap div.about_article h2 {
+	display: block;
+	padding-top: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	color:#33485d;
+	font-size: 1.1em;
+	position: relative;
+}
+
+div.wrap div.about_article h2:before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	background-image: url(../images/satisfaction-ribbon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+}
+
+div.wrap div.about_article p {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	color:#33485d;
+	font-size: 1em;
+}
+
+div.wrap > span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 170px;
+	padding-bottom: 20px;
+	text-align: center;
+	width:150px;
+	font-size: 1.2em;
+	color:#33485d;
+	position: relative;
+}
+
+div.wrap > span:before {
+	content: "";
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-75px;
+	background-image: url(../images/logos-sprite.jpg);
+	background-repeat: no-repeat;
+	background-size: 750px 150px;
+	background-position: -0px 0px;
+	width: 150px;
+	height:150px;
+	border:1px solid #bcc2c6;
+}
+
+div.wrap > span:nth-of-type(2):before {
+	background-position: -150px 0px;
+}
+
+div.wrap > span:nth-of-type(3):before {
+	background-position: -300px 0px;
+}
+
+div.wrap > span:nth-of-type(4):before {
+	background-position: -450px 0px;
+}
+
+div.wrap > span:nth-of-type(5):before {
+	background-position: -600px 0px;
+}
+
+footer {
+	display: block;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-color: #212121;
+	text-align: center;
+}
+
+footer span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	background-image: url(../images/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	width: 270px;
+	color: white;
+	text-align: left;
+}
+footer span a {
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+
+footer span a {
+	padding-left: 5px;
+	color:#449bb5;
+}
+
+
+
+
+
+
+
+
+
