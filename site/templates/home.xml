@@ -54,7 +54,8 @@
 								text_id="contact_international"
 								/>
 							<div class="greeting">
-								<h2>Thank You</h2>
+								<p><cms:text constant="greeting1"/></p>
+								<p><cms:text constant="greeting2"/></p>
 							</div>
 					</div>
 				</div>
