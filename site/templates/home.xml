@@ -79,7 +79,9 @@
 				<span><cms:text constant="copyright"/></span>
 			</footer>
 		</cms:desktop>
+
 <!-- MOBILE VERSION -->
+
 		<cms:mobile>
 			<header>
 					<div class="mobile_title">
@@ -98,6 +100,7 @@
 					<span><cms:text constant="Need_to"/><strong><cms:text constant="MOVE"/></strong></span>
 			</header>
 			<!-- Top Section image slides -->
+			<div id="slides">
 				<div class="inner_form">
 					<h2><cms:text constant="form_title"/></h2>
 					<div class="form_menu">
@@ -133,6 +136,7 @@
 								<p><cms:text constant="greeting2"/></p>
 							</div>
 				</div>
+			</div>
 			<div class="wrap">
 				<cms:module
 					name="articles"
