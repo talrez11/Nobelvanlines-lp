@@ -244,6 +244,7 @@ Site.on_load = function() {
 			return false;
 		});
 
+
 	if (Site.is_mobile()) {
 
 		$('form:first()').on('dialog-show', function() {
