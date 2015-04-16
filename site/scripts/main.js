@@ -259,6 +259,18 @@ Site.on_load = function() {
 			return false;
 		});
 
+		$('form:last()').on('dialog-show', function() {
+			$('form').hide();
+			$('div.send').hide();
+			$('div.inner_form div.greeting').css('opacity','1');
+			$('div.inner_form div.greeting').css('z-index','1');
+			$('div.form_menu').css('opacity','0')
+							  .css('visibility','hidden');
+		    $('div.inner_form div.form_container').css('height','0px');
+		    $(window).scrollTop(0);
+			return false;
+		})
+
 	}
 
 }
