@@ -479,6 +479,7 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset label.ch
 	display: inline-block;
 	vertical-align: middle;
 	width: 40px;
+	margin-left: 10px;
 	margin-top: 25px;
 	border-radius: 5px;
 	border:1px solid #33485d;
