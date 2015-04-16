@@ -98,9 +98,16 @@ header div.form_menu h4 {
 	font-size: 1.8em;
 }
 
+div#slides {
+	display: block;
+	background-image: url(../images/middle-section-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+}
+
 div.inner_form {
 	display: block;
-	background-color: white;
 	position: relative;
 }
 
@@ -110,8 +117,6 @@ div.inner_form div.greeting {
 	bottom:75px;
 	left:0px;
 	width: 100%;
-
-	background-color: white;
 	opacity: 0;
 	z-index: -1;
 	transition:all 1s;
@@ -215,10 +220,6 @@ div.inner_form div.form_menu a:nth-of-type(2):before {
 div.inner_form div.form_container {
 	display:block;
 	text-align: center;
-	background-image: url(../images/middle-section-background.jpg);
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: 100% auto;
 	height: 560px;
 	overflow: hidden;
 	position: relative;
