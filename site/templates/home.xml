@@ -47,12 +47,12 @@
 							<cms:module
 								name="contact_form"
 								action="show"
-								text_id="contact_local"
+								text_id="contact_local_simple"
 								/>
 							<cms:module
 								name="contact_form"
 								action="show"
-								text_id="contact_international"
+								text_id="contact_international_simple"
 								/>
 							<div class="greeting">
 								<p><cms:text constant="greeting1"/></p>
@@ -122,12 +122,12 @@
 							<cms:module
 								name="contact_form"
 								action="show"
-								text_id="contact_local"
+								text_id="contact_local_simple"
 								/>
 							<cms:module
 								name="contact_form"
 								action="show"
-								text_id="contact_international"
+								text_id="contact_international_simple"
 								/>
 
 					</div>
