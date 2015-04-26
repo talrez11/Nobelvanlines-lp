@@ -333,7 +333,7 @@ div#slides div.inner_form div.form_container form:first-of-type fieldset label i
 	border:1px solid #33485d;
 }
 
-div#slides div.inner_form div.form_container form:first-of-type div.controls {
+/*div#slides div.inner_form div.form_container form:first-of-type div.controls {
 	position: absolute;
 	right: 40px;
 	bottom: 0px;
@@ -357,7 +357,7 @@ div#slides div.inner_form div.form_container form:first-of-type div.controls but
 	border-radius: 5px;
 	font-weight: bold;
 	transition: all 0.3s;
-}
+}*/
 
 div#slides div.inner_form div.form_container form:first-of-type div.controls button:hover {
 	background-color: #16731c;
@@ -517,7 +517,7 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset label in
 	border:1px solid #33485d;
 }
 
-div#slides div.inner_form div.form_container form:last-of-type div.controls {
+/*div#slides div.inner_form div.form_container form:last-of-type div.controls {
 	position: absolute;
 	right: 40px;
 	bottom: 0px;
@@ -541,7 +541,7 @@ div#slides div.inner_form div.form_container form:last-of-type div.controls butt
 	cursor: pointer;
 	font-weight: bold;
 	transition: all 0.3s;
-}
+}*/
 
 div#slides div.inner_form div.form_container form:last-of-type div.controls button:hover {
 	background-color: #16731c;
@@ -552,6 +552,109 @@ div#slides div.inner_form div.form_container form:last-of-type fieldset.visible 
 	visibility: visible;
 	left: 0%;
 }
+
+/*New Forms Design*/
+
+div#slides div.inner_form div.form_container {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 145px;
+	padding-bottom: 145px;
+	background-image: url(../images/fill-in-the-form.svg);
+	background-repeat: no-repeat;
+	background-size: 320px 70px;
+	background-position: center 225px;
+	width: 70%;
+	position: relative;
+}
+div#slides div.inner_form div.form_container form {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  width: 100%;
+}
+
+form {
+	display: block;
+}
+
+form label {
+	display: block;
+	width: 100%;
+	padding-top: 15px;
+}
+
+form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+}
+
+form label input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 50%;
+}
+
+div#slides div.inner_form div.form_container form:first-of-type div.controls {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85px;
+}
+
+div#slides div.inner_form div.form_container form:first-of-type div.controls button {
+	display: block;
+	background-color: #15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+div#slides div.inner_form div.form_container form:last-of-type div.controls {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85px;
+}
+
+div#slides div.inner_form div.form_container form:last-of-type div.controls button {
+	display: block;
+	background-color: #15a51d;
+	color: white;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
 
 
 div.wrap {
